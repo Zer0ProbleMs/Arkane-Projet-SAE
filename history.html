@@ -6,20 +6,47 @@
     <title>Histoire</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .background {
-            position: absolute;
-            bottom: -30px;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .4);
-        }
-    </style>
+
 </head>
 <body class="has-background-black">
     <section class="hero">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top" style="z-index: 1000;">
+                <div class="container">
+                    <div id="navMenu" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a href="homepage.html" class="navbar-item">
+                                <img alt="images/Arkane_Icon_white_on_black-01.png" sizes="120px"
+                                     srcset="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 120w, https://res.cloudinary.com/dewzjk72j/image/authenticated/s--jeoBYfFd--/c_lfill,w_240/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 240w"
+                                     src="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz"
+                                     style="--focal-direction-x:center;--focal-direction-y:center"
+                                     data-focal-direction-x="center" data-focal-direction-y="center">
+                            </a>
+                        </div>
+
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons has-addons">
+                                    <a href=""
+                                       class="button is-medium is-white is-outlined has-background-black">Jeux</a>
+                                    <a href=""
+                                       class="button is-medium is-white is-outlined has-background-black">Histoire</a>
+                                    <a href=""
+                                       class="button is-medium is-white is-outlined has-background-black">Actualité</a>
+                                    <a href=""
+                                       class="button is-medium is-white is-outlined has-background-black">Economie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="hero">
         <div class="hero-body">
-            <div class="container has-text-centered background">
+            <div class="container has-text-centered">
                 <p class="title"> Histoire </p>
                 <p class="subtitle"> Vous Retrouverez Dans Cette Page, l'Histoire De Notre Entreprise </p>
             </div>
@@ -27,17 +54,71 @@
     </section>
 
     <section class="section">
-        <div class="container has-background-light">
-            <div class="content">
+        <div class="container">
+            <div class="box has-background-dark">
+
+                <!-- Ligne 1 -->
                 <div class="columns">
-                    <div class="column is-two-thirds">
-                        <figure class="image">
-                            <img src="" alt="">
-                        </figure>
+                    <div class="column">
+                        <div class="content has-text-centered">
+                            <p class="title"> Ceci est le titre</p>
+                            <p class="subtitle">20XX-20XX</p>
+                            <div class="block">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <em>sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                            </div>
+                            <div class="block">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut <strong>labore et dolore magna</strong> aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content p-1">
+                                <div class="content">
+                                    <img src="images/card_dishonored.png" alt="L'image ne fonctionne pas" class="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Ligne 2 -->
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content p-1">
+                                <div class="content">
+                                    <img src="images/card_prey.png" alt="L'image ne fonctionne pas" class="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content has-text-centered">
+                            <p class="title"> Ceci est le titre</p>
+                            <p class="subtitle">20XX-20XX</p>
+                            <div class="block">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <em>sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                            </div>
+                            <div class="block">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut <strong>labore et dolore magna</strong> aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Arkane Studios
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
