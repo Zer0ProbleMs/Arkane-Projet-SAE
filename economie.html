@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +21,21 @@
             line-height: 1.6;
         }
         .eco-box {
+            background-color: #17171a;
+            border: 1px solid #2a2a2e;
             border-left: 4px solid var(--eco-accent);
+            color: #d9d9d9;
             transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
         .eco-box:hover {
             transform: translateY(-2px);
-            box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.5);
+        }
+        .eco-box .title {
+            color: #f5f5f5;
+        }
+        .eco-box p, .eco-box li, .eco-box small {
+            color: #c7c7c7;
         }
         .eco-stat {
             text-align: center;
@@ -37,25 +46,52 @@
             color: var(--eco-accent);
         }
         .eco-stat .eco-stat-label {
-            color: #b5b5b5;
+            color: #9a9a9a;
             text-transform: uppercase;
             font-size: 0.75rem;
             letter-spacing: 0.05em;
         }
+        .eco-table {
+            --bulma-table-color: #d9d9d9;
+            --bulma-table-background-color: transparent;
+            --bulma-table-cell-border-color: #2e2e32;
+            --bulma-table-cell-heading-color: #f5f5f5;
+            --bulma-table-head-background-color: transparent;
+            --bulma-table-body-background-color: transparent;
+            --bulma-table-row-hover-background-color: #202024;
+            --bulma-table-striped-row-even-background-color: #1e1e22;
+        }
         table.eco-table th.eco-latest,
         table.eco-table td.eco-latest {
-            background-color: rgba(255, 56, 96, 0.12);
+            background-color: rgba(255, 56, 96, 0.15);
+        }
+        .eco-box progress.progress {
+            background-color: #2a2a2e;
+        }
+        .eco-box progress.progress::-webkit-progress-bar {
+            background-color: #2a2a2e;
+        }
+        .eco-footer {
+            --bulma-footer-background-color: #0d0d0f;
+            border-top: 1px solid #2a2a2e;
+        }
+        .eco-footer p {
+            color: #c7c7c7;
+        }
+        .eco-hero {
+            background: linear-gradient(135deg, #050505 0%, #1a1013 55%, #050505 100%);
+        }
+        .eco-hero .title {
+            color: #ffffff;
+        }
+        .eco-hero .hero-body {
+            padding-top: 6rem;
         }
     </style>
 </head>
 <body>
 
-<section class="hero is-link is-fullheight" style="position: relative;">
-    <div class="background">
-    </div>
-    <div
-        style="height: 250px; position: absolute; bottom: 0px; width: 100%; background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);">
-    </div>
+<section class="hero is-medium eco-hero">
     <div class="hero-head">
         <nav class="navbar is-fixed-top" style="z-index: 1000;">
             <div class="container">
@@ -89,22 +125,9 @@
         </nav>
     </div>
 
-    <div class="hero-body" style="z-index: 100;">
+    <div class="hero-body">
         <div class="has-text-centered m-auto">
-            <img alt="images/Arkane_Icon_white_on_black-01.png" sizes="120px"
-                srcset="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 120w, https://res.cloudinary.com/dewzjk72j/image/authenticated/s--jeoBYfFd--/c_lfill,w_240/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 240w"
-                src="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz"
-                style="--focal-direction-x:center;--focal-direction-y:center" data-focal-direction-x="center"
-                data-focal-direction-y="center">
             <p class="title">Arkane Studios Economie</p>
-        </div>
-    </div>
-    <div class="hero-foot">
-        <div class="container has-text-centered">
-            <a class="header-arrow" href="#section1">
-                <img class="animate__animated animate__shakeY animate__infinite infinite animate__slower"
-                    src="images/arrow_drop_down_100dp_E3E3E3_FILL0_wght700_GRAD200_opsz48.png">
-            </a>
         </div>
     </div>
 </section>
@@ -283,7 +306,7 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer eco-footer">
     <div class="content has-text-centered">
         <p>
             Arkane Studios
