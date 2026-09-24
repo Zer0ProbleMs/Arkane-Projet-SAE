@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arkane Studios</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                 <div class="container">
                     <div id="navMenu" class="navbar-menu">
                         <div class="navbar-start">
-                            <a href="homepage.html" class="navbar-item">
+                            <a href="index.html" class="navbar-item">
                                 <img alt="images/Arkane_Icon_white_on_black-01.png" sizes="120px"
                                     srcset="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 120w, https://res.cloudinary.com/dewzjk72j/image/authenticated/s--jeoBYfFd--/c_lfill,w_240/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 240w"
                                     src="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz"
@@ -38,10 +39,14 @@
                         <div class="navbar-end">
                             <div class="navbar-item">
                                 <div class="buttons has-addons">
-                                    <a class="button is-medium is-white is-outlined has-background-black">Jeux</a>
-                                    <a class="button is-medium is-white is-outlined has-background-black">Histoire</a>
-                                    <a class="button is-medium is-white is-outlined has-background-black">Actualité</a>
-                                    <a class="button is-medium is-white is-outlined has-background-black">Economie</a>
+                                    <a href="jeux.html"
+                                        class="button is-medium is-white is-outlined has-background-black">Jeux</a>
+                                    <a href="history.html"
+                                        class="button is-medium is-white is-outlined has-background-black">Histoire</a>
+                                    <a href="quisommenous.html"
+                                        class="button is-medium is-white is-outlined has-background-black">Actualité</a>
+                                    <a href="economie.html"
+                                        class="button is-medium is-white is-outlined has-background-black">Economie</a>
                                 </div>
                             </div>
                         </div>
@@ -69,14 +74,14 @@
             </div>
         </div>
     </section>
-    <section id="section1" class="section has-background-black">
+    <section id="section1" class="section">
         <div class="container">
             <div class="notification is-warning">
                 Site en construction. Le contenu présenté ici est susceptible d'évoluer.
             </div>
         </div>
     </section>
-    <section class="section has-background-black">
+    <section class="section">
         <div class="container">
             <div class="columns">
                 <div class="column">
@@ -110,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section class="section has-background-black">
+    <section class="section">
         <div class="container">
             <div class="columns">
                 <div class="column is-half is-offset-one-quarter">
@@ -135,10 +140,39 @@
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <h1 class="is-size-2 has-text-centered">
+                        Nous contacter
+                    </h1>
+                    <form action="index.html" method="GET">
+                        <div class="field">
+                            <label class="label">Normal input</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-link" type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 Arkane Studios
+            </p>
+            <p>
+                Credits: Damien CORTINA
             </p>
         </div>
     </footer>
