@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --eco-accent: #ff3860;
+        }
+        .eco-box {
+            border-left: 4px solid var(--eco-accent);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .eco-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.3);
+        }
+        .eco-stat {
+            text-align: center;
+        }
+        .eco-stat .eco-stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--eco-accent);
+        }
+        .eco-stat .eco-stat-label {
+            color: #b5b5b5;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        table.eco-table th.eco-latest,
+        table.eco-table td.eco-latest {
+            background-color: rgba(255, 56, 96, 0.12);
+        }
+    </style>
 </head>
 <body>
 
@@ -73,6 +104,7 @@
     <div class="container">
         <div class="notification is-warning has-text-centered">
             Site en construction. Le contenu présenté ici est susceptible d'évoluer.
+            <br> Don la police d'ecriture est en cours de modification pour une meilleure lisibilité.
         </div>
     </div>
 </section>
@@ -80,8 +112,36 @@
 <section class="section has-background-black">
     <div class="container">
 
+        <!-- kpi 2025 -->
+        <div class="columns is-multiline">
+            <div class="column is-3">
+                <div class="box eco-box eco-stat">
+                    <p class="eco-stat-value">36,7 M€</p>
+                    <p class="eco-stat-label">CA 2025 (+27,7 %)</p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box eco-box eco-stat">
+                    <p class="eco-stat-value">8,13 M€</p>
+                    <p class="eco-stat-label">Resultat net 2025</p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box eco-box eco-stat">
+                    <p class="eco-stat-value">22,2 %</p>
+                    <p class="eco-stat-label">Marge nette 2025</p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="box eco-box eco-stat">
+                    <p class="eco-stat-value">100-199</p>
+                    <p class="eco-stat-label">Salaries (2022)</p>
+                </div>
+            </div>
+        </div>
+
         <!-- identite -->
-        <div class="box">
+        <div class="box eco-box">
             <h1 class="title">ARKANE STUDIOS</h1>
             <p>SIREN : 424 606 176</p>
             <p>Effectif : entre 100 et 199 salaries (donnee 2022)</p>
@@ -89,104 +149,124 @@
         </div>
 
         <!-- chiffre d'affaires -->
-        <div class="box">
+        <div class="box eco-box">
             <h2 class="title is-4">Chiffre d'affaires</h2>
-            <table class="table is-fullwidth is-striped">
-                <tr>
-                    <th>Annee</th>
-                    <th>2022</th>
-                    <th>2023</th>
-                    <th>2024</th>
-                    <th>2025</th>
-                </tr>
-                <tr>
-                    <td>CA (M€)</td>
-                    <td>19,2</td>
-                    <td>21,1</td>
-                    <td>28,7</td>
-                    <td>36,7</td>
-                </tr>
-                <tr>
-                    <td>Croissance CA (%)</td>
-                    <td>-7,4</td>
-                    <td>10</td>
-                    <td>35,9</td>
-                    <td>27,7</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table class="table is-fullwidth is-striped is-hoverable eco-table">
+                    <tr>
+                        <th>Annee</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                        <th>2024</th>
+                        <th class="eco-latest">2025</th>
+                    </tr>
+                    <tr>
+                        <td>CA (M€)</td>
+                        <td>19,2</td>
+                        <td>21,1</td>
+                        <td>28,7</td>
+                        <td class="eco-latest">36,7</td>
+                    </tr>
+                    <tr>
+                        <td>Croissance CA (%)</td>
+                        <td>-7,4</td>
+                        <td>10</td>
+                        <td>35,9</td>
+                        <td class="eco-latest">27,7</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- resultat -->
-        <div class="box">
+        <div class="box eco-box">
             <h2 class="title is-4">Resultat</h2>
-            <table class="table is-fullwidth is-striped">
-                <tr>
-                    <th>Annee</th>
-                    <th>2022</th>
-                    <th>2023</th>
-                    <th>2024</th>
-                    <th>2025</th>
-                </tr>
-                <tr>
-                    <td>EBITDA (M€)</td>
-                    <td>2,07</td>
-                    <td>2,48</td>
-                    <td>3,46</td>
-                    <td>3,82</td>
-                </tr>
-                <tr>
-                    <td>Resultat net (M€)</td>
-                    <td>1,25</td>
-                    <td>1,54</td>
-                    <td>2,83</td>
-                    <td>8,13</td>
-                </tr>
-                <tr>
-                    <td>Marge nette (%)</td>
-                    <td>6,5</td>
-                    <td>7,3</td>
-                    <td>9,9</td>
-                    <td>22,2</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table class="table is-fullwidth is-striped is-hoverable eco-table">
+                    <tr>
+                        <th>Annee</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                        <th>2024</th>
+                        <th class="eco-latest">2025</th>
+                    </tr>
+                    <tr>
+                        <td>EBITDA (M€)</td>
+                        <td>2,07</td>
+                        <td>2,48</td>
+                        <td>3,46</td>
+                        <td class="eco-latest">3,82</td>
+                    </tr>
+                    <tr>
+                        <td>Resultat net (M€)</td>
+                        <td>1,25</td>
+                        <td>1,54</td>
+                        <td>2,83</td>
+                        <td class="eco-latest">8,13</td>
+                    </tr>
+                    <tr>
+                        <td>Marge nette (%)</td>
+                        <td>6,5</td>
+                        <td>7,3</td>
+                        <td>9,9</td>
+                        <td class="eco-latest">22,2</td>
+                    </tr>
+                </table>
+            </div>
+            <p class="mb-1">Evolution de la marge nette</p>
+            <progress class="progress is-danger" value="6.5" max="25" title="2022"></progress>
+            <progress class="progress is-danger" value="7.3" max="25" title="2023"></progress>
+            <progress class="progress is-danger" value="9.9" max="25" title="2024"></progress>
+            <progress class="progress is-danger" value="22.2" max="25" title="2025"></progress>
         </div>
 
         <!-- masse salariale -->
-        <div class="box">
+        <div class="box eco-box">
             <h2 class="title is-4">Salaires</h2>
-            <table class="table is-fullwidth is-striped">
-                <tr>
-                    <th>Annee</th>
-                    <th>2022</th>
-                    <th>2023</th>
-                    <th>2024</th>
-                    <th>2025</th>
-                </tr>
-                <tr>
-                    <td>Salaires et charges (M€)</td>
-                    <td>14,4</td>
-                    <td>15,3</td>
-                    <td>18,2</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>Salaires / CA (%)</td>
-                    <td>74,7</td>
-                    <td>72,3</td>
-                    <td>63,4</td>
-                    <td>57,2</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table class="table is-fullwidth is-striped is-hoverable eco-table">
+                    <tr>
+                        <th>Annee</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                        <th>2024</th>
+                        <th class="eco-latest">2025</th>
+                    </tr>
+                    <tr>
+                        <td>Salaires et charges (M€)</td>
+                        <td>14,4</td>
+                        <td>15,3</td>
+                        <td>18,2</td>
+                        <td class="eco-latest">21</td>
+                    </tr>
+                    <tr>
+                        <td>Salaires / CA (%)</td>
+                        <td>74,7</td>
+                        <td>72,3</td>
+                        <td>63,4</td>
+                        <td class="eco-latest">57,2</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- structure financiere 2025 -->
-        <div class="box">
+        <div class="box eco-box">
             <h2 class="title is-4">Structure financiere 2025</h2>
-            <ul>
-                <li>Fonds propres : 27,5 M€</li>
-                <li>Tresorerie : 1,55 M€</li>
-                <li>Capital social : 181 414,33 €</li>
-            </ul>
+            <div class="columns is-mobile">
+                <div class="column has-text-centered">
+                    <p class="eco-stat-value" style="font-size: 1.4rem;">27,5 M€</p>
+                    <p class="eco-stat-label">Fonds propres</p>
+                </div>
+                <div class="column has-text-centered">
+                    <p class="eco-stat-value" style="font-size: 1.4rem;">1,55 M€</p>
+                    <p class="eco-stat-label">Tresorerie</p>
+                </div>
+                <div class="column has-text-centered">
+                    <p class="eco-stat-value" style="font-size: 1.4rem;">181 414,33 €</p>
+                    <p class="eco-stat-label">Capital social</p>
+                </div>
+            </div>
         </div>
 
         <p class="has-text-centered"><small>Source : pappers.fr (SIREN 424606176)</small></p>
