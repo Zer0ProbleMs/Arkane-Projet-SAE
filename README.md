@@ -12,14 +12,12 @@
 * Etudiant 4 : [EL MOUSSAFER Yanis](mailto:yanis.el_moussafer@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 * Etudiant 5 : [CATALKAYA Semih-Taha](mailto:semih-taha.catalkaya@edu.univ-fcomte.fr?subject=SAE_1_05_06) 
 
-## Pages :
+## Présentation du projet
+
+### Pages :
 
 * Accueil (Damien CORTINA)
 * Histoire (Daris KOKIC)
 * Jeux-Vidéos (Anfel DERARDJA)
 * Economie (Yanis EL MOUSSAFER)
 * Actualité (Semih-Taha CATALKAYA)
-
-# Présentation du projet
-
-TODO
