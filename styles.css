@@ -57,7 +57,17 @@ body {
 }
 
 .arkane-menu .button:hover .button-underline{
+    background-color: black!important;
     width: 100%;
+}
+
+.arkane-menu .button.active .button-underline{
+    background-color: white;
+    width: 100%;
+}
+
+.arkane-menu:hover .button.active .button-underline{
+    background-color: black;
 }
 
 .arkane-menu:hover .button{
@@ -70,4 +80,5 @@ body {
     margin: auto;
     height: 2px;
     transition: width .25s ease-out;
+    background-color: black;
 }
