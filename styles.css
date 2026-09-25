@@ -4,6 +4,14 @@ body {
     font-family: Emerge BF W01 Regular;
 }
 
+.center-title {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    translate: -50% -50%;
+    opacity: 1;
+}
+
 .navbar{
     padding: 25px 0;
 }
