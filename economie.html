@@ -24,13 +24,10 @@
         .eco-box {
             background-color: #17171a;
             border: 1px solid #2a2a2e;
-            border-left: 4px solid var(--eco-accent);
             color: #d9d9d9;
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
-        .eco-box:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.5);
+        .eco-box hr {
+            background-color: #2a2a2e;
         }
         .eco-box .title {
             color: #f5f5f5;
@@ -67,11 +64,65 @@
         table.eco-table td.eco-latest {
             background-color: rgba(255, 56, 96, 0.15);
         }
-        .eco-box progress.progress {
-            background-color: #2a2a2e;
+        .eco-carousel {
+            position: relative;
+            background-color: #ffffff;
+            border-radius: 6px;
+            overflow: hidden;
         }
-        .eco-box progress.progress::-webkit-progress-bar {
-            background-color: #2a2a2e;
+        .eco-carousel-track {
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+        .eco-carousel-slide {
+            flex: 0 0 100%;
+            display: block;
+        }
+        .eco-carousel-slide img {
+            width: 100%;
+            display: block;
+        }
+        .eco-carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(23, 23, 26, 0.7);
+            color: #ffffff;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+            line-height: 1;
+        }
+        .eco-carousel-arrow:hover {
+            background-color: var(--eco-accent);
+        }
+        .eco-carousel-arrow.is-prev {
+            left: 10px;
+        }
+        .eco-carousel-arrow.is-next {
+            right: 10px;
+        }
+        .eco-carousel-dots {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 0.75rem;
+        }
+        .eco-carousel-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 1px solid #2a2a2e;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+        }
+        .eco-carousel-dot.is-active {
+            background-color: var(--eco-accent);
+            border-color: var(--eco-accent);
         }
         .eco-footer {
             --bulma-footer-background-color: #0d0d0f;
@@ -129,7 +180,7 @@
                                         <div>Actualité</div>
                                         <div class="button-underline"></div>
                                     </a>
-                                    <a href="economie.html" class="button is-medium is-white is-outlined p-3">
+                                    <a href="economie.html" class="button is-medium is-white is-outlined p-3 active">
                                         <div>Economie</div>
                                         <div class="button-underline"></div>
                                     </a>
@@ -160,45 +211,58 @@
 
 <section class="section has-background-black eco-content">
     <div class="container">
+        <div class="box eco-box">
 
-        <!-- kpi 2025 -->
-        <div class="columns is-multiline">
-            <div class="column is-3">
-                <div class="box eco-box eco-stat">
+            <!-- kpi 2025 -->
+            <div class="columns is-multiline has-text-centered">
+                <div class="column is-3 eco-stat">
                     <p class="eco-stat-value">36,7 M€</p>
                     <p class="eco-stat-label">CA 2025 (+27,7 %)</p>
                 </div>
-            </div>
-            <div class="column is-3">
-                <div class="box eco-box eco-stat">
+                <div class="column is-3 eco-stat">
                     <p class="eco-stat-value">8,13 M€</p>
                     <p class="eco-stat-label">Resultat net 2025</p>
                 </div>
-            </div>
-            <div class="column is-3">
-                <div class="box eco-box eco-stat">
+                <div class="column is-3 eco-stat">
                     <p class="eco-stat-value">22,2 %</p>
                     <p class="eco-stat-label">Marge nette 2025</p>
                 </div>
-            </div>
-            <div class="column is-3">
-                <div class="box eco-box eco-stat">
+                <div class="column is-3 eco-stat">
                     <p class="eco-stat-value">100-199</p>
                     <p class="eco-stat-label">Salaries (2022)</p>
                 </div>
             </div>
-        </div>
+            <hr>
 
-        <!-- identite -->
-        <div class="box eco-box">
-            <h1 class="title">ARKANE STUDIOS</h1>
-            <p>SIREN : 424 606 176</p>
-            <p>Effectif : entre 100 et 199 salaries (donnee 2022)</p>
-            <p>Siege : 49 Quai Rambaud, 69002 Lyon</p>
-        </div>
+            <!-- identite + graphique -->
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title">ARKANE STUDIOS</h1>
+                    <p>SIREN : 424 606 176</p>
+                    <p>Effectif : entre 100 et 199 salaries (donnee 2022)</p>
+                    <p>Siege : 49 Quai Rambaud, 69002 Lyon</p>
+                </div>
+                <div class="column">
+                    <p class="title is-5 has-text-centered">Finances de ARKANE STUDIOS</p>
+                    <div class="eco-carousel">
+                        <div class="eco-carousel-track" id="ecoCarouselTrack">
+                            <div class="eco-carousel-slide"><img src="images/finances-chiffre-affaires.png" alt="Graphique du chiffre d'affaires d'Arkane Studios"></div>
+                            <div class="eco-carousel-slide"><img src="images/finances-resultat-net.png" alt="Graphique du resultat net d'Arkane Studios"></div>
+                            <div class="eco-carousel-slide"><img src="images/finances-effectif.png" alt="Graphique de l'effectif d'Arkane Studios"></div>
+                        </div>
+                        <button type="button" class="eco-carousel-arrow is-prev" id="ecoCarouselPrev" aria-label="Precedent">&#10094;</button>
+                        <button type="button" class="eco-carousel-arrow is-next" id="ecoCarouselNext" aria-label="Suivant">&#10095;</button>
+                    </div>
+                    <div class="eco-carousel-dots" id="ecoCarouselDots">
+                        <button type="button" class="eco-carousel-dot is-active" data-index="0" aria-label="Diapositive 1"></button>
+                        <button type="button" class="eco-carousel-dot" data-index="1" aria-label="Diapositive 2"></button>
+                        <button type="button" class="eco-carousel-dot" data-index="2" aria-label="Diapositive 3"></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
 
-        <!-- chiffre d'affaires -->
-        <div class="box eco-box">
+            <!-- chiffre d'affaires -->
             <h2 class="title is-4">Chiffre d'affaires</h2>
             <div class="table-container">
                 <table class="table is-fullwidth is-striped is-hoverable eco-table">
@@ -225,10 +289,9 @@
                     </tr>
                 </table>
             </div>
-        </div>
+            <hr>
 
-        <!-- resultat -->
-        <div class="box eco-box">
+            <!-- resultat -->
             <h2 class="title is-4">Resultat</h2>
             <div class="table-container">
                 <table class="table is-fullwidth is-striped is-hoverable eco-table">
@@ -262,15 +325,9 @@
                     </tr>
                 </table>
             </div>
-            <p class="mb-1">Evolution de la marge nette</p>
-            <progress class="progress is-danger" value="6.5" max="25" title="2022"></progress>
-            <progress class="progress is-danger" value="7.3" max="25" title="2023"></progress>
-            <progress class="progress is-danger" value="9.9" max="25" title="2024"></progress>
-            <progress class="progress is-danger" value="22.2" max="25" title="2025"></progress>
-        </div>
+            <hr>
 
-        <!-- masse salariale -->
-        <div class="box eco-box">
+            <!-- masse salariale -->
             <h2 class="title is-4">Salaires</h2>
             <div class="table-container">
                 <table class="table is-fullwidth is-striped is-hoverable eco-table">
@@ -297,10 +354,9 @@
                     </tr>
                 </table>
             </div>
-        </div>
+            <hr>
 
-        <!-- structure financiere 2025 -->
-        <div class="box eco-box">
+            <!-- structure financiere 2025 -->
             <h2 class="title is-4">Structure financiere 2025</h2>
             <div class="columns is-mobile">
                 <div class="column has-text-centered">
@@ -316,10 +372,10 @@
                     <p class="eco-stat-label">Capital social</p>
                 </div>
             </div>
+
+            <p class="has-text-centered mt-4"><small>Source : pappers.fr (SIREN 424606176)</small></p>
+
         </div>
-
-        <p class="has-text-centered"><small>Source : pappers.fr (SIREN 424606176)</small></p>
-
     </div>
 </section>
 
@@ -333,6 +389,27 @@
         </p>
     </div>
 </footer>
+
+<script>
+    (function () {
+        var track = document.getElementById('ecoCarouselTrack');
+        var dots = document.querySelectorAll('.eco-carousel-dot');
+        var slideCount = track.children.length;
+        var index = 0;
+
+        function goTo(i) {
+            index = (i + slideCount) % slideCount;
+            track.style.transform = 'translateX(-' + (index * 100) + '%)';
+            dots.forEach(function (d, di) { d.classList.toggle('is-active', di === index); });
+        }
+
+        document.getElementById('ecoCarouselPrev').addEventListener('click', function () { goTo(index - 1); });
+        document.getElementById('ecoCarouselNext').addEventListener('click', function () { goTo(index + 1); });
+        dots.forEach(function (d) {
+            d.addEventListener('click', function () { goTo(+d.dataset.index); });
+        });
+    })();
+</script>
 
 </body>
 </html>
