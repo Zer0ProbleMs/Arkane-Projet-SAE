@@ -1,18 +1,102 @@
 @import url(https://db.onlinewebfonts.com/c/39beaf31467cad0b34d2db9f723b9b83?family=Emerge+BF+W01+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap');
 
 body {
-    font-family: Emerge BF W01 Regular;
+    font-family: Oswald, sans-serif;
+}
+
+.title {
+    font-family: Passion One, sans-serif;
+    letter-spacing: normal;
+    font-weight: bolder;
+    color: #FF9C46;
+}
+
+hr {
+    background: #4B304E;
+    height: 2px;
+    border-radius: 10px
+}
+
+.box, .card, .card-content {
+    box-shadow: 0px 13px 35px 0px rgba(0,0,0,0.3);
+}
+
+strong {
+    color: #4B304E;
+}
+
+.default-background {
+    background-color: #FEFFFB;
+    color: #000000;
+}
+
+.notification-background {
+    background-color: #92938F;
+    color: #000000;
+}
+
+.primary-background {
+    background-color: #4B304E;
+    color: #ffffff;
+}
+
+.secondary-background {
+    background-color: #FF9C46;
+    color: #ffffff;
+}
+
+.default-color {
+    color: #FEFFFB;
+}
+
+.notification-color {
+    color: #92938F;
+}
+
+.primary-color {
+    color: #4B304E;
+}
+
+.secondary-color {
+    color: #FF9C46;
+}
+
+.warning {
+    padding: 20px;
+    margin: 20px 0;
+    z-index: -100;
+    border: 4px outset rgb(255, 183, 15);
+    transform: skewX(-10deg);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(255, 183, 15);
+}
+
+.information {
+    padding: 20px;
+    margin: 20px 0;
+    z-index: -100;
+    border: 4px inset rgb(32, 156, 238);
+    transform: skewX(-10deg);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(32, 156, 238);
 }
 
 .center-title {
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 30%;
     translate: -50% -50%;
     opacity: 1;
 }
 
-.navbar{
+.navbar {
     padding: 25px 0;
 }
 
