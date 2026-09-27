@@ -10,7 +10,6 @@
     animation-duration: 5s;
 }
 
-
 @keyframes backgroundAnimation {
     from {
         background-color: rgba(0, 0, 0, 1);
