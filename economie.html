@@ -12,29 +12,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
     <style>
-        :root {
-            --eco-accent: #ff3860;
-        }
+        
         .eco-content, .eco-content * {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
         .eco-content p, .eco-content td, .eco-content th, .eco-content li {
             line-height: 1.6;
         }
-        .eco-box {
-            background-color: #17171a;
-            border: 1px solid #2a2a2e;
-            color: #d9d9d9;
-        }
+        
         .eco-box hr {
             background-color: #2a2a2e;
         }
-        .eco-box .title {
-            color: #f5f5f5;
-        }
-        .eco-box p, .eco-box li, .eco-box small {
-            color: #c7c7c7;
-        }
+        
         .eco-stat {
             text-align: center;
         }
@@ -44,25 +33,15 @@
             color: var(--eco-accent);
         }
         .eco-stat .eco-stat-label {
-            color: #9a9a9a;
+           
             text-transform: uppercase;
             font-size: 0.75rem;
             letter-spacing: 0.05em;
         }
-        .eco-table {
-            --bulma-table-color: #d9d9d9;
-            --bulma-table-background-color: transparent;
-            --bulma-table-cell-border-color: #2e2e32;
-            --bulma-table-cell-heading-color: #f5f5f5;
-            --bulma-table-head-background-color: transparent;
-            --bulma-table-body-background-color: transparent;
-            --bulma-table-row-hover-background-color: #202024;
-            --bulma-table-striped-row-even-background-color: #1e1e22;
-            --bulma-table-striped-row-even-hover-background-color: #232327;
-        }
+        
         table.eco-table th.eco-latest,
         table.eco-table td.eco-latest {
-            background-color: rgba(255, 56, 96, 0.15);
+            background-color: rgba(255, 106, 0, 0.15);
         }
         .eco-carousel {
             position: relative;
@@ -124,19 +103,11 @@
             background-color: var(--eco-accent);
             border-color: var(--eco-accent);
         }
-        .eco-footer {
-            --bulma-footer-background-color: #0d0d0f;
-            border-top: 1px solid #2a2a2e;
-        }
-        .eco-footer p {
-            color: #c7c7c7;
-        }
+        
         .eco-hero {
-            background: linear-gradient(135deg, #050505 0%, #1a1013 55%, #050505 100%);
+            background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
         }
-        .eco-hero .title {
-            color: #ffffff;
-        }
+    
         .eco-hero .hero-body {
             padding-top: 6rem;
         }
@@ -200,16 +171,23 @@
     </div>
 </section>
 
-<section id="section1" class="section has-background-black">
+<!-- Avertissement -->
+<section class="section" style="padding-top: 5%">
     <div class="container">
-        <div class="notification is-warning has-text-centered">
-            Site en construction. Le contenu présenté ici est susceptible d'évoluer.
-            <br> Don la police d'ecriture est en cours de modification pour une meilleure lisibilité.
+        <div class="warning has-text-centered">
+            <h1>Site en construction. Le contenu présenté ici est susceptible d'évoluer.</h1>
+        </div>
+        <div class="information has-text-centered">
+            <h1>
+                Ce site est un projet d'étudiants en première année de BUT à l'Université de Franche-Comté.
+                <br>
+                Il s'agit d'un site vitrine (non-officiel) pour la société française Arkane Studios, spécialisée dans le développement de jeux-vidéos.
+            </h1>
         </div>
     </div>
 </section>
 
-<section class="section has-background-black eco-content">
+<section class="section  eco-content">
     <div class="container">
         <div class="box eco-box">
 
@@ -379,13 +357,39 @@
     </div>
 </section>
 
-<footer class="footer eco-footer">
-    <div class="content has-text-centered">
+<!-- Footer -->
+<footer class="footer primary-background">
+    <div class="has-text-centered">
         <p>
             Arkane Studios
         </p>
         <p>
-            Credits: Yanis EL MOUSSAFER
+            Credits: Yanis El Moussafer
+        </p>
+        <hr class="separator">
+        <div class="columns is-centered">
+            <div class="column is-narrow">
+                <a href="https://www.facebook.com/ArkaneStudios/" target="_blank">
+                    <img src="images/Logo/Facebook_Icon.svg" alt="Icon Facebook" class="logo grow-hover">
+                </a>
+            </div>
+            <div class="column is-narrow">
+                <a href="https://fr.linkedin.com/company/arkane-studios" target="_blank">
+                    <img src="images/Logo/LinkedIn_Icon.svg" alt="Icon LinkedIn" class="logo grow-hover">
+                </a>
+            </div>
+            <div class="column is-narrow">
+                <a href="https://x.com/ArkaneStudios" target="_blank">
+                    <img src="images/Logo/X_Logo.svg" alt="Icon X" class="logo grow-hover">
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <p style="opacity: 0.5; font-weight: lighter">
+            &copy 2026 Arkane Studios - Trademarks are the property of their respective owners. All Rights Reserved.
         </p>
     </div>
 </footer>

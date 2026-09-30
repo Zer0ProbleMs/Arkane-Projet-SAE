@@ -3,8 +3,8 @@
 
 /* -- Custom Static Classes -- */
 .vl {
-    border-left: 3px;
-    height: 120px;
+    border-left:3px;
+    height:120px;
 }
 
 .logo {
@@ -27,11 +27,8 @@
     color: #FF9C46;
 }
 
-.box,
-.card,
-.card-content,
-.shadows {
-    box-shadow: 0px 13px 35px 0px rgba(0, 0, 0, 0.3);
+.box, .card, .card-content, .shadows{
+    box-shadow: 0px 13px 35px 0px rgba(0,0,0,0.3);
 }
 
 .warning {
@@ -70,41 +67,6 @@
     text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
     text-transform: uppercase;
 }
-
-
-/* -- Custom Animated Classes -- */
-.overlay::before {
-    content: '';
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    background: linear-gradient(0deg, rgba(254, 255, 251, 1) 5%, rgba(254, 255, 251, 0) 20%);
-    animation-name: backgroundAnimation;
-    animation-duration: 5s;
-}
-
-@keyframes backgroundAnimation {
-    from {
-        background-color: rgba(0, 0, 0, 1);
-    }
-
-    to {
-        background-color: rgba(0, 0, 0, 0);
-    }
-}
-
-.grow-hover:hover {
-    scale: 1.05;
-    transition: all 500ms;
-}
-
-.grow-hover {
-    scale: 1;
-    transition: all 500ms
-}
-
 
 /* -- Color Palette -- */
 .default-background {
@@ -210,45 +172,33 @@ strong {
     display: block;
 }
 
-.arkane-menu .button:hover {
-    border: unset;
+.arkane-menu .button:hover{
+    border:unset;
 }
 
-.arkane-menu .button:hover .button-underline {
-    background-color: black !important;
+.arkane-menu .button:hover .button-underline{
+    background-color: black!important;
     width: 100%;
 }
 
-.arkane-menu .button.active .button-underline {
+.arkane-menu .button.active .button-underline{
     background-color: white;
     width: 100%;
 }
 
-.arkane-menu:hover .button.active .button-underline {
+.arkane-menu:hover .button.active .button-underline{
     background-color: black;
 }
 
-.arkane-menu:hover .button {
+.arkane-menu:hover .button{
     color: black;
 }
 
-.button-underline {
+.button-underline{
     background-color: black;
     width: 0px;
     margin: auto;
     height: 2px;
     transition: width .25s ease-out;
     background-color: black;
-}
-
-.button {
-    border-radius: 0;
-}
-
-.notification {
-    border-radius: 0;
-}
-
-.death-gradient {
-    background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
 }
