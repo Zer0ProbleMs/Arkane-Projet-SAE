@@ -3,11 +3,72 @@
     height: 500px;
     margin: auto;
 }
+
 .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .column {
-    text-align: center;
+    text-align: center 10%;
+}
+
+/* Image de la bannière */
+.hero.is-halfheight {
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.overlay.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.hero .hero-body {
+    position: relative;
+    z-index: 10;
+    transform: translateY(-100px);
+}
+
+/* Dégradé en bas de l'image */
+.overlay.background::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #FEFFFB
+    );
+    z-index: 10;
+}
+
+.hero .hero-body {
+    position: relative;
+    z-index: 5;
+}
+
+
+/* avertissement*/
+.warning-section {
+    position: relative;
+    z-index: 20;
+    margin-top: -230px;
+    padding-top: 0;
 }
