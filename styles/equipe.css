@@ -1,0 +1,14 @@
+.has-background-orange{
+	/*background-color: #ff9c46;*/
+	background-color: #4b304e;
+}
+
+.title{
+	color: #ff9c46;
+	/*color: #4b304e;*/
+	/*text-shadow: unset;*/
+}
+
+.card-content > .card{
+	padding-bottom: 25px;
+}
