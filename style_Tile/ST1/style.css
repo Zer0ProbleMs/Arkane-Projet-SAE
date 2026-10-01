@@ -1,0 +1,98 @@
+@property --primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #FF9C46;
+}
+
+@property --secondary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #886195;
+}
+
+@property --dark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2f4858;
+}
+
+.color1 {
+    background-color: var(--primary);
+}
+.color1 div:after{
+    content: toString(var(--primary));
+}
+
+.color2 {
+    background-color: #f57570;
+}
+
+.color3 {
+    background-color: var(--secondary);
+}
+
+.color4 {
+    background-color: #f53538;
+}
+
+.color5 {
+    background-color: #2ccd7a;
+}
+
+.color6{
+    background-color: #0093ff;
+}
+
+
+.hero.is-primary {
+    background: #FF9C46;
+    background: linear-gradient(90deg, rgba(255, 156, 70, 1) 0%, rgba(245, 117, 112, 1) 100%);
+}
+
+.is-primary:not(.is-outlined) {
+    background-color: var(--primary) !important;
+    color:white;
+}
+
+.is-primary.is-outlined {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.is-secondary:not(.is-outlined) {
+    background-color: var(--secondary) !important;
+    color:white;
+}
+
+.is-secondary.is-outlined {
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.has-text-primary {
+    color: var(--primary) !important;
+}
+
+.has-text-secondary {
+    color: var(--secondary) !important;
+}
+
+body {
+    font-family: Oswald, sans-serif;
+}
+
+h1.title,
+.subtitle {
+    font-family: Passion One, sans-serif;
+}
+
+h1.title {
+    color: var(--primary);
+    /* background: -webkit-linear-gradient(var(--primary), #f57570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.is-success{
+    background-color: #2ccd7a;
+}

@@ -1,0 +1,24 @@
+.tile-title {
+    border-bottom: 1px dashed #abb1bf;
+    color: #abb1bf;
+}
+
+.color-example-container {
+    width: 125px;
+    display: inline-block"
+}
+
+.color-examples .color-example-container:last-child{
+    width: 150px;
+}
+
+.color-example {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
