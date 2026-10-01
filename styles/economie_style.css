@@ -1,11 +1,11 @@
 :root {
     --eco-accent: #FF9C46;
-    --eco-surface: #140f17;
-    --eco-surface-alt: #1e1721;
-    --eco-surface-alt-2: #271e2b;
-    --eco-border: #3a2e40;
-    --eco-text: #FEFFFB;
-    --eco-muted: #92938F;
+    --eco-violet: #4B304E;
+    --eco-surface: #FEFFFB;
+    --eco-card: #ffffff;
+    --eco-border: #e3dbe6;
+    --eco-text: #241a28;
+    --eco-muted: #6f6f72;
 }
 
 .eco-content {
@@ -18,21 +18,20 @@
     line-height: 1.6;
 }
 
-/* soften the global orange Passion One title style for this data-heavy page */
-.eco-content .title {
+/* keep the repeated section headers calm; the page title keeps the site's usual branded style */
+.eco-content h2.title {
     font-family: inherit;
     text-shadow: none;
     letter-spacing: normal;
     font-weight: 700;
     text-align: left;
-    color: var(--eco-text);
+    color: var(--eco-violet);
 }
 
 .eco-box {
-    background-color: var(--eco-surface-alt);
+    background-color: var(--eco-card);
     border: 1px solid var(--eco-border);
     color: var(--eco-text);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 .eco-box h1.title {
     display: inline-block;
@@ -63,24 +62,20 @@
 }
 
 .eco-table {
-    --bulma-table-color: var(--eco-text);
-    --bulma-table-background-color: transparent;
     --bulma-table-cell-border-color: var(--eco-border);
-    --bulma-table-cell-heading-color: var(--eco-text);
-    --bulma-table-head-background-color: transparent;
-    --bulma-table-body-background-color: transparent;
-    --bulma-table-row-hover-background-color: var(--eco-surface-alt-2);
-    --bulma-table-striped-row-even-background-color: var(--eco-surface-alt-2);
-    --bulma-table-striped-row-even-hover-background-color: #332838;
+    --bulma-table-cell-heading-color: var(--eco-violet);
+    --bulma-table-row-hover-background-color: #faf6f1;
+    --bulma-table-striped-row-even-background-color: #faf7fb;
 }
 table.eco-table th.eco-latest,
 table.eco-table td.eco-latest {
-    background-color: rgba(255, 156, 70, 0.14);
+    background-color: rgba(255, 156, 70, 0.16);
 }
 
 .eco-carousel {
     position: relative;
     background-color: #ffffff;
+    border: 1px solid var(--eco-border);
     border-radius: 6px;
     overflow: hidden;
 }
@@ -100,7 +95,7 @@ table.eco-table td.eco-latest {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(20, 15, 23, 0.7);
+    background-color: rgba(36, 26, 40, 0.65);
     color: #ffffff;
     border: none;
     width: 32px;
@@ -139,12 +134,12 @@ table.eco-table td.eco-latest {
     border-color: var(--eco-accent);
 }
 
+/* soft gradient: violet at the top fading into the page's light background, like the photo heroes on other pages */
 .eco-hero {
-    background: linear-gradient(160deg, #19131d 0%, #2a1f30 100%);
+    background: linear-gradient(180deg, var(--eco-violet) 0%, var(--eco-violet) 82%, var(--eco-surface) 100%);
 }
 .eco-hero .title {
-    color: var(--eco-text);
-    text-shadow: none;
+    color: #ffffff;
 }
 .eco-hero .hero-body {
     padding-top: 6rem;
