@@ -23,5 +23,5 @@ Il s'agit d'un site vitrine (non-officiel) pour la société française Arkane S
 * Accueil ([CORTINA Damien](mailto:damien.cortina@edu.univ-fcomte.fr?subject=SAE_1_05_06))
 * Histoire ([KOKIC Daris](mailto:daris.kokic@edu.univ-fcomte.fr?subject=SAE_1_05_06))
 * Jeux-Vidéos ([DERARDJA Anfel](mailto:anfel.derardja@edu.univ-fcomte.fr?subject=SAE_1_05_06))
-* Economie ([EL MOUSSAFER Yanis](mailto:yanis.el_moussafer@edu.univ-fcomte.fr?subject=SAE_1_05_06))
-* Actualité ([CATALKAYA Semih-Taha](mailto:semih-taha.catalkaya@edu.univ-fcomte.fr?subject=SAE_1_05_06))
+* Économie ([EL MOUSSAFER Yanis](mailto:yanis.el_moussafer@edu.univ-fcomte.fr?subject=SAE_1_05_06))
+* Coulisses ([CATALKAYA Semih-Taha](mailto:semih-taha.catalkaya@edu.univ-fcomte.fr?subject=SAE_1_05_06))
