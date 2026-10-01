@@ -11,107 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
-    <style>
-        
-        .eco-content, .eco-content * {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-        .eco-content p, .eco-content td, .eco-content th, .eco-content li {
-            line-height: 1.6;
-        }
-        
-        .eco-box hr {
-            background-color: #2a2a2e;
-        }
-        
-        .eco-stat {
-            text-align: center;
-        }
-        .eco-stat .eco-stat-value {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--eco-accent);
-        }
-        .eco-stat .eco-stat-label {
-           
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.05em;
-        }
-        
-        table.eco-table th.eco-latest,
-        table.eco-table td.eco-latest {
-            background-color: rgba(255, 106, 0, 0.15);
-        }
-        .eco-carousel {
-            position: relative;
-            background-color: #ffffff;
-            border-radius: 6px;
-            overflow: hidden;
-        }
-        .eco-carousel-track {
-            display: flex;
-            transition: transform 0.3s ease;
-        }
-        .eco-carousel-slide {
-            flex: 0 0 100%;
-            display: block;
-        }
-        .eco-carousel-slide img {
-            width: 100%;
-            display: block;
-        }
-        .eco-carousel-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(23, 23, 26, 0.7);
-            color: #ffffff;
-            border: none;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1rem;
-            line-height: 1;
-        }
-        .eco-carousel-arrow:hover {
-            background-color: var(--eco-accent);
-        }
-        .eco-carousel-arrow.is-prev {
-            left: 10px;
-        }
-        .eco-carousel-arrow.is-next {
-            right: 10px;
-        }
-        .eco-carousel-dots {
-            display: flex;
-            gap: 0.5rem;
-            justify-content: center;
-            margin-top: 0.75rem;
-        }
-        .eco-carousel-dot {
-            width: 9px;
-            height: 9px;
-            border-radius: 50%;
-            border: 1px solid #2a2a2e;
-            background-color: transparent;
-            cursor: pointer;
-            padding: 0;
-        }
-        .eco-carousel-dot.is-active {
-            background-color: var(--eco-accent);
-            border-color: var(--eco-accent);
-        }
-        
-        .eco-hero {
-            background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
-        }
-    
-        .eco-hero .hero-body {
-            padding-top: 6rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/economie_style.css">
 </head>
 <body>
 
@@ -172,7 +72,7 @@
 </section>
 
 <!-- Avertissement -->
-<section class="section" style="padding-top: 5%">
+<section class="section eco-content" style="padding-top: 5%">
     <div class="container">
         <div class="warning has-text-centered">
             <h1>Site en construction. Le contenu présenté ici est susceptible d'évoluer.</h1>
