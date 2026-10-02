@@ -1,18 +1,16 @@
 <!doctype html>
-<html lang="fr">
-
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Arkane Studios - Histoire</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles/histoire_style.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="" href="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
 </head>
-<body class="has-background-black">
+<body class="default-background" style="z-index: -100">
 
 <!-- Navbar -->
 <section class="hero">
@@ -30,79 +28,98 @@
                         </a>
                     </div>
 
-                        <div class="navbar-end">
-                            <div class="navbar-item">
-                                <div class="buttons has-addons m-0 is-relative arkane-menu">
-                                    <div class="sub-buttons"></div>
-                                    <div class="p-0 m-0 buttons-frame"></div>
-                                    <a href="index.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Accueil</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="jeux.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Jeux</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="history.html" class="button is-medium is-white is-outlined p-3 active">
-                                        <div>Histoire</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="actualite.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Actualité</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="economie.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Economie</div>
-                                        <div class="button-underline"></div>
-                                    </a>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons has-addons m-0 is-relative arkane-menu">
+                                <div class="sub-buttons"></div>
+                                <div class="p-0 m-0 buttons-frame"></div>
+                                <a href="index.html" class="button is-medium is-white is-outlined p-3">
+                                    <div>Accueil</div>
+                                    <div class="button-underline"></div>
+                                </a>
+                                <a href="jeux.html" class="button is-medium is-white is-outlined p-3">
+                                    <div>Jeux</div>
+                                    <div class="button-underline"></div>
+                                </a>
+                                <a href="history.html" class="button is-medium is-white is-outlined p-3 active">
+                                    <div>Histoire</div>
+                                    <div class="button-underline"></div>
+                                </a>
+                                <a href="equipe.html" class="button is-medium is-white is-outlined p-3">
+                                    <div>Coulisses</div>
+                                    <div class="button-underline"></div>
+                                </a>
+                                <a href="economie.html" class="button is-medium is-white is-outlined p-3">
+                                    <div>Economie</div>
+                                    <div class="button-underline"></div>
+                                </a>
 
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </section>
+            </div>
+        </nav>
+    </div>
+</section>
 
 <!-- Partie Titre -->
-<section class="hero is-fullheight" style="position: relative">
-    <figure class="overlay">
-        <img src="images/banniere_histoire.jpg" alt="Image Bannière" style="position: absolute; width: 100%; height: 100%; opacity: 0.6">
+<section class="hero is-halfheight">
+    <figure class="overlay background" style="position: absolute; top: 0; left: 0; width: 100%">
+        <img src="images/The_Outsider_Front_View.jpg" alt="Image
+         Bannière">
     </figure>
     <div class="hero-body">
-        <p class="title is-size-1 center-title" style="z-index: 100">HISTOIRE</p>
+        <h1 class="title is-size-1 center-title" style="scale: 150%">L'HISTOIRE D'ARKANE <br>STUDIOS</h1>
     </div>
-    <div class="hero-foot" style="transform: translate(0%, 0%); z-index: 100">
+    <div class="hero-foot">
         <div class="container has-text-centered">
-            <a class="header-arrow" href="#section1">
-                <img class="animate__animated animate__shakeY animate__infinite 	infinite animate__slower"
-                     src="images/arrow_drop_down_100dp_E3E3E3_FILL0_wght700_GRAD200_opsz48.png">
+            <a class="header-arrow">
+                <img class="animate__animated animate__shakeY animate__infinite infinite animate__slower"
+                     src="images/Arrow_Down.png"
+                     alt="Down Arrow">
             </a>
         </div>
     </div>
 </section>
 
-    <!-- Avertissement -->
-    <section id="section1" class="section">
-        <div class="container">
-            <div class="notification is-warning has-text-centered">
-                Site en construction. Le contenu présenté ici est susceptible d'évoluer.
-            </div>
+<!-- Avertissement -->
+<section class="section">
+    <div class="container">
+        <div class="warning has-text-centered">
+            <h1>Site en construction. Le contenu présenté ici est susceptible d'évoluer.</h1>
         </div>
-    </section>
+        <div class="information has-text-centered">
+            <h1>
+                Ce site est un projet d'étudiants en première année de BUT à l'Université de Franche-Comté.
+                <br>
+                Il s'agit d'un site vitrine (non-officiel) pour la société française Arkane Studios, spécialisée dans le développement de jeux-vidéos.
+            </h1>
+        </div>
+    </div>
+</section>
 
 <!-- Partie Principale -->
 <section class="section">
-    <div class="container">
-        <div class="box">
+    <div class="container" style="z-index: 50;">
+        <div class="box default-background">
+
+            <!-- A Propos de d'Arkane -->
+            <div class="has-text-centered p-4">
+                <h1 class="title">A LEUR PROPOS</h1>
+                <h2 class="subtitle">Arkane Studios</h2>
+                <div class="block">
+                    <p>Fondé en 1999, Arkane® Studios s'est imposé comme l'une des équipes de développement les plus réputées et les plus acclamées par la critique dans l'industrie du jeu vidéo. Arkane s'est forgé une réputation en créant des jeux au style unique, à l'action immersive et à l'approche artisanale. Les titres du studio, parmi lesquels figurent Dishonored®, Dishonored 2, Prey® et DEATHLOOP™, ont remporté des centaines de distinctions prestigieuses à travers le monde, dont plusieurs prix du « Jeu de l'année ». Marvel's Blade est un jeu pour adultes, en solo et à la troisième personne, dont l'action se déroule au cœur de Paris. Il est actuellement en cours de développement chez Arkane Lyon, en collaboration avec Marvel Games. </p>
+                </div>
+            </div>
+            <hr>
 
             <!-- Ligne 1 -->
             <div class="columns">
                 <div class="column">
-                    <div class="content has-text-centered">
-                        <p class="title"> Ceci est le titre</p>
-                        <p class="subtitle">20XX-20XX</p>
+                    <div class="has-text-centered">
+                        <h1 class="title"> Les Origines</h1>
+                        <h2 class="subtitle">1999 - 2006</h2>
                         <div class="block">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <em>sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
                         </div>
@@ -113,7 +130,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
+                    <div class="card grow-hover">
                         <div class="card-image">
                             <figure class="image">
                                 <img src="images/card_dishonored.png" alt="Carte Dishonored">
@@ -127,7 +144,7 @@
             <!-- Ligne 2 -->
             <div class="columns">
                 <div class="column">
-                    <div class="card">
+                    <div class="card grow-hover">
                         <div class="card-image">
                             <figure class="image">
                                 <img src="images/card_prey.png" alt="Carte Prey">
@@ -136,9 +153,9 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="content has-text-centered">
-                        <p class="title"> Ceci est le titre</p>
-                        <p class="subtitle">20XX-20XX</p>
+                    <div class="has-text-centered">
+                        <h1 class="title">L'Expansion</h1>
+                        <h2 class="subtitle">2006 – 2012</h2>
                         <div class="block">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <em>sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
                         </div>
@@ -154,9 +171,9 @@
             <!-- Ligne 3 -->
             <div class="columns">
                 <div class="column">
-                    <div class="content has-text-centered">
-                        <p class="title"> Ceci est le titre</p>
-                        <p class="subtitle">20XX-20XX</p>
+                    <div class="has-text-centered">
+                        <h1 class="title"> La Consécration </h1>
+                        <h2 class="subtitle">2012 - 2018</h2>
                         <div class="block">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <em>sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
                         </div>
@@ -167,7 +184,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
+                    <div class="card grow-hover">
                         <div class="card-image">
                             <figure class="image">
                                 <img src="images/card_redfall.png" alt="Carte Prey">
@@ -176,22 +193,73 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
+            <!-- Ligne 4 -->
+            <div class="columns">
+                <div class="column">
+                    <div class="card grow-hover">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="images/banniere_histoire.jpg" alt="Carte Prey">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="has-text-centered">
+                        <h1 class="title">Les Turbulences</h1>
+                        <h2 class="subtitle">2018 – 2026</h2>
+                        <div class="block">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, <em>sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        </div>
+                        <div class="block">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut <strong>labore et dolore magna</strong> aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                Arkane Studios
-            </p>
-            <p>
-                Credits: Daris KOKIC
-            </p>
+<!-- Footer -->
+<footer class="footer primary-background">
+    <div class="has-text-centered">
+        <p>
+            Arkane Studios
+        </p>
+        <p>
+            Credits: Daris KOKIC
+        </p>
+        <hr class="separator">
+        <div class="columns is-centered">
+            <div class="column is-narrow">
+                <a href="https://www.facebook.com/ArkaneStudios/" target="_blank">
+                    <img src="images/Logo/Facebook_Icon.svg" alt="Icon Facebook" class="logo grow-hover">
+                </a>
+            </div>
+            <div class="column is-narrow">
+                <a href="https://fr.linkedin.com/company/arkane-studios" target="_blank">
+                    <img src="images/Logo/LinkedIn_Icon.svg" alt="Icon LinkedIn" class="logo grow-hover">
+                </a>
+            </div>
+            <div class="column is-narrow">
+                <a href="https://x.com/ArkaneStudios" target="_blank">
+                    <img src="images/Logo/X_Logo.svg" alt="Icon X" class="logo grow-hover">
+                </a>
+            </div>
         </div>
-    </footer>
+
+
+
+
+        <p style="opacity: 0.5; font-weight: lighter">
+            &copy 2026 Arkane Studios - Trademarks are the property of their respective owners. All Rights Reserved.
+        </p>
+    </div>
+</footer>
 
 </body>
-
 </html>
