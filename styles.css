@@ -1,6 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/39beaf31467cad0b34d2db9f723b9b83?family=Emerge+BF+W01+Regular);
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* -- Custom Static Classes -- */
 .vl {
     border-left: 3px;
@@ -19,8 +18,7 @@
 }
 
 .title {
-    text-shadow: -1px 2px 0 rgba(0, 0, 0, 0.4);
-    font-family: Passion One, sans-serif;
+    font-family: Emerge BF W01 Regular, sans-serif;
     letter-spacing: normal;
     font-weight: bolder;
     text-align: center;
@@ -34,221 +32,227 @@
     box-shadow: 0px 13px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
-.warning {
-    padding: 20px;
-    margin: 20px 0;
-    z-index: -100;
-    border: 4px outset rgb(255, 183, 15);
-    transform: skewX(-10deg);
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: rgb(255, 183, 15);
-    font-weight: bold;
+.card-round {
+    border-radius: 75px 10px;
+    overflow: hidden;
 }
 
-.information {
-    padding: 20px;
-    margin: 20px 0;
-    z-index: -100;
-    border: 4px inset rgb(32, 156, 238);
-    transform: skewX(-10deg);
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: rgb(32, 156, 238);
-}
-
-.center-title {
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    translate: -50% -50%;
-    opacity: 1;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
-    text-transform: uppercase;
-}
-
-
-/* -- Custom Animated Classes -- */
-.overlay::before {
-    content: '';
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    background: linear-gradient(0deg, rgba(254, 255, 251, 1) 5%, rgba(254, 255, 251, 0) 20%);
-    animation-name: backgroundAnimation;
-    animation-duration: 5s;
-}
-
-@keyframes backgroundAnimation {
-    from {
-        background-color: rgba(0, 0, 0, 1);
+    .warning {
+        padding: 20px;
+        margin: 20px 0;
+        z-index: -100;
+        border: 4px outset rgb(255, 183, 15);
+        transform: skewX(-10deg);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: rgb(255, 183, 15);
+        font-weight: bold;
     }
 
-    to {
-        background-color: rgba(0, 0, 0, 0);
+    .information {
+        padding: 20px;
+        margin: 20px 0;
+        z-index: -100;
+        border: 4px inset rgb(32, 156, 238);
+        transform: skewX(-10deg);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: rgb(32, 156, 238);
     }
-}
 
-.grow-hover:hover {
-    scale: 1.05;
-    transition: all 500ms;
-}
-
-.grow-hover {
-    scale: 1;
-    transition: all 500ms
-}
-
-
-/* -- Color Palette -- */
-.default-background {
-    background-color: #FEFFFB;
-    color: #000000;
-}
-
-.notification-background {
-    background-color: #92938F;
-    color: #000000;
-}
-
-.primary-background {
-    background-color: #4B304E;
-    color: #ffffff;
-}
-
-.secondary-background {
-    background-color: #FF9C46;
-    color: #ffffff;
-}
-
-.default-color {
-    color: #FEFFFB;
-}
-
-.notification-color {
-    color: #92938F;
-}
-
-.primary-color {
-    color: #4B304E;
-}
-
-.secondary-color {
-    color: #FF9C46;
-}
+    .center-title {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        translate: -50% -50%;
+        opacity: 1;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+        text-transform: uppercase;
+    }
 
 
-/* -- Element Modifiers -- */
-body {
-    font-family: Oswald, sans-serif;
-    background-color: #FEFFFB;
-}
+    /* -- Custom Animated Classes -- */
+    .overlay::before {
+        content: '';
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background: linear-gradient(0deg, rgba(254, 255, 251, 1) 5%, rgba(254, 255, 251, 0) 20%);
+        animation-name: backgroundAnimation;
+        animation-duration: 5s;
+    }
 
-hr {
-    background: #4B304E;
-    height: 2px;
-    border-radius: 10px
-}
+    @keyframes backgroundAnimation {
+        from {
+            background-color: rgba(0, 0, 0, 1);
+        }
 
-strong {
-    color: #4B304E;
-}
+        to {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    .grow-hover:hover {
+        scale: 1.05;
+        transition: all 500ms;
+    }
+
+    .grow-hover {
+        scale: 1;
+        transition: all 500ms
+    }
 
 
-/* Navbar Specific */
-.navbar {
-    padding: 25px 0;
-}
+    /* -- Color Palette -- */
+    .default-background {
+        background-color: #FEFFFB;
+        color: #000000;
+    }
 
-.sub-buttons {
-    border: 2px solid white;
-    width: 100%;
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    height: 100%;
-    z-index: -100;
-    transition: top .5s, left .5s, transform .5s, border .5s;
-    transform: skewX(-10deg);
-}
+    .notification-background {
+        background-color: #92938F;
+        color: #000000;
+    }
 
-.buttons-frame {
-    z-index: -100;
-    transition: transform .5s, background-color .25s;
-    border: 2px solid white;
-    transform: skewX(-10deg);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
+    .primary-background {
+        background-color: #4B304E;
+        color: #ffffff;
+    }
 
-.arkane-menu:hover .sub-buttons {
-    top: 15px;
-    left: 30px;
-    transform: skewX(20deg);
-    border: 4px solid white;
-}
+    .secondary-background {
+        background-color: #FF9C46;
+        color: #ffffff;
+    }
 
-.arkane-menu:hover .buttons-frame {
-    transform: skewX(20deg);
-    background-color: white;
-    color: black;
-}
+    .default-color {
+        color: #FEFFFB;
+    }
 
-.arkane-menu .button {
-    border-radius: 0%;
-    border: unset;
-    transition: color .25s;
-    display: block;
-}
+    .notification-color {
+        color: #92938F;
+    }
 
-.arkane-menu .button:hover {
-    border: unset;
-}
+    .primary-color {
+        color: #4B304E;
+    }
 
-.arkane-menu .button:hover .button-underline {
-    background-color: black !important;
-    width: 100%;
-}
+    .secondary-color {
+        color: #FF9C46;
+    }
 
-.arkane-menu .button.active .button-underline {
-    background-color: white;
-    width: 100%;
-}
 
-.arkane-menu:hover .button.active .button-underline {
-    background-color: black;
-}
+    /* -- Element Modifiers -- */
+    body {
+        font-family: Montserrat, sans-serif;
+        background-color: #FEFFFB;
+        font-size: 14px;
+    }
 
-.arkane-menu:hover .button {
-    color: black;
-}
+    hr {
+        background: #4B304E;
+        height: 2px;
+        border-radius: 10px
+    }
 
-.button-underline {
-    background-color: black;
-    width: 0px;
-    margin: auto;
-    height: 2px;
-    transition: width .25s ease-out;
-    background-color: black;
-}
+    strong {
+        color: #4B304E;
+    }
 
-.button {
-    border-radius: 0;
-}
 
-.notification {
-    border-radius: 0;
-}
+    /* Navbar Specific */
+    .navbar {
+        padding: 25px 0;
+    }
 
-.death-gradient {
-    background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
-}
+    .sub-buttons {
+        border: 2px solid white;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        left: -5px;
+        height: 100%;
+        z-index: -100;
+        transition: top .5s, left .5s, transform .5s, border .5s;
+        transform: skewX(-10deg);
+    }
+
+    .buttons-frame {
+        z-index: -100;
+        transition: transform .5s, background-color .25s;
+        border: 2px solid white;
+        transform: skewX(-10deg);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .arkane-menu:hover .sub-buttons {
+        top: 15px;
+        left: 30px;
+        transform: skewX(20deg);
+        border: 4px solid white;
+    }
+
+    .arkane-menu:hover .buttons-frame {
+        transform: skewX(20deg);
+        background-color: white;
+        color: black;
+    }
+
+    .arkane-menu .button {
+        border-radius: 0%;
+        border: unset;
+        transition: color .25s;
+        display: block;
+    }
+
+    .arkane-menu .button:hover {
+        border: unset;
+    }
+
+    .arkane-menu .button:hover .button-underline {
+        background-color: black !important;
+        width: 100%;
+    }
+
+    .arkane-menu .button.active .button-underline {
+        background-color: white;
+        width: 100%;
+    }
+
+    .arkane-menu:hover .button.active .button-underline {
+        background-color: black;
+    }
+
+    .arkane-menu:hover .button {
+        color: black;
+    }
+
+    .button-underline {
+        background-color: black;
+        width: 0px;
+        margin: auto;
+        height: 2px;
+        transition: width .25s ease-out;
+        background-color: black;
+    }
+
+    .button {
+        border-radius: 0;
+    }
+
+    .notification {
+        border-radius: 0;
+    }
+
+    .death-gradient {
+        background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
+    }
