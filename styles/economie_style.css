@@ -87,6 +87,19 @@ table.eco-table td.eco-latest {
     flex: 0 0 100%;
     display: block;
 }
+.eco-col-chart,
+.eco-carousel,
+.eco-carousel-track,
+.eco-carousel-slide,
+.eco-chart-box {
+    min-width: 0;
+    max-width: 100%;
+}
+.eco-chart-box {
+    position: relative;
+    height: 280px;
+    padding: 1rem 3rem 0.5rem;
+}
 .eco-carousel-slide img {
     width: 100%;
     display: block;

@@ -66,7 +66,7 @@
 
     <div class="hero-body">
         <div class="has-text-centered m-auto">
-            <p class="title">Arkane Studios Economie</p>
+            <h1 class="title">Arkane Studios Economie</h1>
         </div>
     </div>
 </section>
@@ -120,13 +120,13 @@
                     <p>Effectif : entre 100 et 199 salaries (donnee 2022)</p>
                     <p>Siege : 49 Quai Rambaud, 69002 Lyon</p>
                 </div>
-                <div class="column">
+                <div class="column eco-col-chart">
                     <p class="title is-5 has-text-centered">Finances de ARKANE STUDIOS</p>
                     <div class="eco-carousel">
                         <div class="eco-carousel-track" id="ecoCarouselTrack">
-                            <div class="eco-carousel-slide"><img src="images/finances-chiffre-affaires.png" alt="Graphique du chiffre d'affaires d'Arkane Studios"></div>
-                            <div class="eco-carousel-slide"><img src="images/finances-resultat-net.png" alt="Graphique du resultat net d'Arkane Studios"></div>
-                            <div class="eco-carousel-slide"><img src="images/finances-effectif.png" alt="Graphique de l'effectif d'Arkane Studios"></div>
+                            <div class="eco-carousel-slide"><div class="eco-chart-box"><canvas id="chartCA" role="img" aria-label="Courbe du chiffre d'affaires d'Arkane Studios de 2022 à 2025"></canvas></div></div>
+                            <div class="eco-carousel-slide"><div class="eco-chart-box"><canvas id="chartResultat" role="img" aria-label="Courbe du résultat net d'Arkane Studios de 2022 à 2025"></canvas></div></div>
+                            <div class="eco-carousel-slide"><div class="eco-chart-box"><canvas id="chartMarge" role="img" aria-label="Courbe de la marge nette d'Arkane Studios de 2022 à 2025"></canvas></div></div>
                         </div>
                         <button type="button" class="eco-carousel-arrow is-prev" id="ecoCarouselPrev" aria-label="Precedent">&#10094;</button>
                         <button type="button" class="eco-carousel-arrow is-next" id="ecoCarouselNext" aria-label="Suivant">&#10095;</button>
@@ -136,6 +136,7 @@
                         <button type="button" class="eco-carousel-dot" data-index="1" aria-label="Diapositive 2"></button>
                         <button type="button" class="eco-carousel-dot" data-index="2" aria-label="Diapositive 3"></button>
                     </div>
+                    <p class="has-text-centered"><small>2022-2025 : comptes publiés. 2015-2021 : valeurs relevées sur le graphique Pappers (arrondies à 0,1 M€).</small></p>
                 </div>
             </div>
             <hr>
@@ -289,11 +290,70 @@
 
 
         <p style="opacity: 0.5; font-weight: lighter">
-            &copy 2026 Arkane Studios - Trademarks are the property of their respective owners. All Rights Reserved.
+            &copy; 2026 Arkane Studios - Trademarks are the property of their respective owners. All Rights Reserved.
         </p>
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script>
+    (function () {
+        var annees = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+        var ca = [11.8, 10.6, 9.6, 9.9, 13.2, 16.7, 20.7, 19.2, 21.1, 28.7, 36.7];
+        var resultat = [3.7, 1.9, 1.8, 1.0, 3.7, 4.5, 5.7, 1.25, 1.54, 2.83, 8.13];
+        var marge = ca.map(function (v, i) { return Math.round(resultat[i] / v * 1000) / 10; });
+        var orange = '#FF9C46';
+        var violet = '#4B304E';
+
+        function fr(valeur) {
+            return String(valeur).replace('.', ',');
+        }
+
+        function courbe(id, titre, donnees, unite, couleur) {
+            new Chart(document.getElementById(id), {
+                type: 'line',
+                data: {
+                    labels: annees,
+                    datasets: [{
+                        label: titre,
+                        data: donnees,
+                        borderColor: couleur,
+                        backgroundColor: couleur + '33',
+                        pointBackgroundColor: couleur,
+                        pointRadius: 4,
+                        pointHoverRadius: 6,
+                        borderWidth: 3,
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: true, text: titre + ' (' + unite + ')', color: violet, font: { size: 15, weight: '600' } },
+                        tooltip: {
+                            callbacks: {
+                                label: function (ctx) { return fr(ctx.parsed.y) + ' ' + unite; }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { callback: function (v) { return fr(v); } }
+                        }
+                    }
+                }
+            });
+        }
+
+        courbe('chartCA', 'Chiffre d’affaires', ca, 'M€', orange);
+        courbe('chartResultat', 'Résultat net', resultat, 'M€', violet);
+        courbe('chartMarge', 'Marge nette', marge, '%', orange);
+    })();
+</script>
 <script>
     (function () {
         var track = document.getElementById('ecoCarouselTrack');
