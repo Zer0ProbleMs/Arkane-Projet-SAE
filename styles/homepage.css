@@ -17,3 +17,16 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .4);
 }
+
+.section.is-fullheight, .hero.is-fullheight{
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: center;
+    border:1px dashed lightgrey;
+}
+
+.second-body{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    height: 100vh;
+}
