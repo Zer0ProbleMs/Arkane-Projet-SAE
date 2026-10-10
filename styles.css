@@ -37,222 +37,225 @@
     overflow: hidden;
 }
 
-    .warning {
-        padding: 20px;
-        margin: 20px 0;
-        z-index: -100;
-        border: 4px outset rgb(255, 183, 15);
-        transform: skewX(-10deg);
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        color: rgb(255, 183, 15);
-        font-weight: bold;
+.warning {
+    position: relative;
+    padding: 15px;
+    margin: 15px 0;
+    z-index: 100;
+    border: 4px outset rgb(255, 183, 15);
+    transform: skewX(-10deg);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(255, 183, 15);
+    font-weight: bold;
+}
+
+.information {
+    position: relative;
+    padding: 15px;
+    margin: 15px 0;
+    z-index: 100;
+    border: 4px inset rgb(32, 156, 238);
+    transform: skewX(-10deg);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(32, 156, 238);
+}
+
+.center-title {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    translate: -50% -50%;
+    opacity: 1;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+}
+
+
+/* -- Custom Animated Classes -- */
+.overlay::before {
+    content: '';
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(254, 255, 251, 1) 5%, rgba(254, 255, 251, 0) 20%);
+    animation-name: backgroundAnimation;
+    animation-duration: 5s;
+}
+
+@keyframes backgroundAnimation {
+    from {
+        background-color: rgba(0, 0, 0, 1);
     }
 
-    .information {
-        padding: 20px;
-        margin: 20px 0;
-        z-index: -100;
-        border: 4px inset rgb(32, 156, 238);
-        transform: skewX(-10deg);
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        color: rgb(32, 156, 238);
+    to {
+        background-color: rgba(0, 0, 0, 0);
     }
+}
 
-    .center-title {
-        position: absolute;
-        left: 50%;
-        top: 25%;
-        translate: -50% -50%;
-        opacity: 1;
-        text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
-        text-transform: uppercase;
-    }
+.grow-hover:hover {
+    scale: 1.05;
+    transition: all 500ms;
+}
 
-
-    /* -- Custom Animated Classes -- */
-    .overlay::before {
-        content: '';
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        background: linear-gradient(0deg, rgba(254, 255, 251, 1) 5%, rgba(254, 255, 251, 0) 20%);
-        animation-name: backgroundAnimation;
-        animation-duration: 5s;
-    }
-
-    @keyframes backgroundAnimation {
-        from {
-            background-color: rgba(0, 0, 0, 1);
-        }
-
-        to {
-            background-color: rgba(0, 0, 0, 0);
-        }
-    }
-
-    .grow-hover:hover {
-        scale: 1.05;
-        transition: all 500ms;
-    }
-
-    .grow-hover {
-        scale: 1;
-        transition: all 500ms
-    }
+.grow-hover {
+    scale: 1;
+    transition: all 500ms
+}
 
 
-    /* -- Color Palette -- */
-    .default-background {
-        background-color: #FEFFFB;
-        color: #000000;
-    }
+/* -- Color Palette -- */
+.default-background {
+    background-color: #FEFFFB;
+    color: #000000;
+}
 
-    .notification-background {
-        background-color: #92938F;
-        color: #000000;
-    }
+.notification-background {
+    background-color: #92938F;
+    color: #000000;
+}
 
-    .primary-background {
-        background-color: #4B304E;
-        color: #ffffff;
-    }
+.primary-background {
+    background-color: #4B304E;
+    color: #ffffff;
+}
 
-    .secondary-background {
-        background-color: #FF9C46;
-        color: #ffffff;
-    }
+.secondary-background {
+    background-color: #FF9C46;
+    color: #ffffff;
+}
 
-    .default-color {
-        color: #FEFFFB;
-    }
+.default-color {
+    color: #FEFFFB;
+}
 
-    .notification-color {
-        color: #92938F;
-    }
+.notification-color {
+    color: #92938F;
+}
 
-    .primary-color {
-        color: #4B304E;
-    }
+.primary-color {
+    color: #4B304E;
+}
 
-    .secondary-color {
-        color: #FF9C46;
-    }
-
-
-    /* -- Element Modifiers -- */
-    body {
-        font-family: Montserrat, sans-serif;
-        background-color: #FEFFFB;
-        font-size: 14px;
-    }
-
-    hr {
-        background: #4B304E;
-        height: 2px;
-        border-radius: 10px
-    }
-
-    strong {
-        color: #4B304E;
-    }
+.secondary-color {
+    color: #FF9C46;
+}
 
 
-    /* Navbar Specific */
-    .navbar {
-        padding: 25px 0;
-    }
+/* -- Element Modifiers -- */
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #FEFFFB;
+    font-size: 14px;
+    text-align: left;
+}
 
-    .sub-buttons {
-        border: 2px solid white;
-        width: 100%;
-        position: absolute;
-        top: 5px;
-        left: -5px;
-        height: 100%;
-        z-index: -100;
-        transition: top .5s, left .5s, transform .5s, border .5s;
-        transform: skewX(-10deg);
-    }
+hr {
+    background: #4B304E;
+    height: 2px;
+    border-radius: 10px
+}
 
-    .buttons-frame {
-        z-index: -100;
-        transition: transform .5s, background-color .25s;
-        border: 2px solid white;
-        transform: skewX(-10deg);
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-    }
+strong {
+    color: #4B304E;
+}
 
-    .arkane-menu:hover .sub-buttons {
-        top: 15px;
-        left: 30px;
-        transform: skewX(20deg);
-        border: 4px solid white;
-    }
 
-    .arkane-menu:hover .buttons-frame {
-        transform: skewX(20deg);
-        background-color: white;
-        color: black;
-    }
+/* Navbar Specific */
+.navbar {
+    padding: 25px 0;
+}
 
-    .arkane-menu .button {
-        border-radius: 0%;
-        border: unset;
-        transition: color .25s;
-        display: block;
-    }
+.sub-buttons {
+    border: 2px solid white;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    height: 100%;
+    z-index: -100;
+    transition: top .5s, left .5s, transform .5s, border .5s;
+    transform: skewX(-10deg);
+}
 
-    .arkane-menu .button:hover {
-        border: unset;
-    }
+.buttons-frame {
+    z-index: -100;
+    transition: transform .5s, background-color .25s;
+    border: 2px solid white;
+    transform: skewX(-10deg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
 
-    .arkane-menu .button:hover .button-underline {
-        background-color: black !important;
-        width: 100%;
-    }
+.arkane-menu:hover .sub-buttons {
+    top: 15px;
+    left: 30px;
+    transform: skewX(20deg);
+    border: 4px solid white;
+}
 
-    .arkane-menu .button.active .button-underline {
-        background-color: white;
-        width: 100%;
-    }
+.arkane-menu:hover .buttons-frame {
+    transform: skewX(20deg);
+    background-color: white;
+    color: black;
+}
 
-    .arkane-menu:hover .button.active .button-underline {
-        background-color: black;
-    }
+.arkane-menu .button {
+    border-radius: 0%;
+    border: unset;
+    transition: color .25s;
+    display: block;
+}
 
-    .arkane-menu:hover .button {
-        color: black;
-    }
+.arkane-menu .button:hover {
+    border: unset;
+}
 
-    .button-underline {
-        background-color: black;
-        width: 0px;
-        margin: auto;
-        height: 2px;
-        transition: width .25s ease-out;
-        background-color: black;
-    }
+.arkane-menu .button:hover .button-underline {
+    background-color: black !important;
+    width: 100%;
+}
 
-    .button {
-        border-radius: 0;
-    }
+.arkane-menu .button.active .button-underline {
+    background-color: white;
+    width: 100%;
+}
 
-    .notification {
-        border-radius: 0;
-    }
+.arkane-menu:hover .button.active .button-underline {
+    background-color: black;
+}
 
-    .death-gradient {
-        background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
-    }
+.arkane-menu:hover .button {
+    color: black;
+}
+
+.button-underline {
+    background-color: black;
+    width: 0px;
+    margin: auto;
+    height: 2px;
+    transition: width .25s ease-out;
+    background-color: black;
+}
+
+.button {
+    border-radius: 0;
+}
+
+.notification {
+    border-radius: 0;
+}
+
+.death-gradient {
+    background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
+}
