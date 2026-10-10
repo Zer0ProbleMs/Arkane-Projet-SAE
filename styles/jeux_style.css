@@ -1,21 +1,50 @@
-.image {
+.image.grow-hover {
+    position: relative;
     max-width: 400px;
     height: 500px;
     margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.image img {
+.image.grow-hover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.image.grow-hover .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.1s ease;
     border-radius: 10px;
+    pointer-events: none;
+
+}
+
+.image.grow-hover:hover .overlay {
+    opacity: 1;
+}
+
+.image.grow-hover .overlay .button {
+    background: black;
+    color: yellow;
+    border: 1px solid yellow;
+    pointer-events: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .column {
     text-align: center 10%;
 }
 
-/* Image de la bannière */
 .hero.is-halfheight {
     min-height: 100vh;
     height: 100vh;
@@ -27,15 +56,15 @@
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: 0;
 }
 
 .overlay.background img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
-    object-position: center center;
+    object-position: top center;
 }
 
 .hero .hero-body {
@@ -44,18 +73,17 @@
     transform: translateY(-100px);
 }
 
-/* Dégradé en bas de l'image */
 .overlay.background::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 15%;
+    height: 45%;
     background: linear-gradient(
         to bottom,
         transparent,
-        #FEFFFB
+        #fefffb
     );
     z-index: 10;
 }
@@ -66,10 +94,13 @@
 }
 
 
-/* avertissement*/
 .warning-section {
     position: relative;
     z-index: 20;
     margin-top: -230px;
     padding-top: 0;
+}
+
+h1.mon-titre {
+  font-size: 1.5rem;
 }
