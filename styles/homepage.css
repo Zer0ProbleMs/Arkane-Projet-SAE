@@ -4,29 +4,241 @@
     }
 
     to {
-        background-color: rgba(0, 0, 0, .4);
+        background-color: rgba(0, 0, 0, .3);
     }
 }
 
 .background {
     animation-name: backgroundAnimation;
-    animation-duration: 6s;
+    animation-duration: 1s;
     position: absolute;
     bottom: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .3);
 }
 
-.section.is-fullheight, .hero.is-fullheight{
+.section.is-fullheight,
+.hero.is-fullheight {
     height: 100vh;
     position: relative;
     scroll-snap-align: center;
-    border:1px dashed lightgrey;
 }
 
-.second-body{
+.section.is-fullheight .container-fluid,
+.section.is-fullheight .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.second-body {
     scroll-snap-type: y mandatory;
     overflow: scroll;
     height: 100vh;
+}
+
+.games {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.games img {
+    height: 50vh;
+    width: 20%;
+}
+
+.games-overlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/** ------------------------- Style Tile ------------------------- **/
+
+@property --primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #FF9C46;
+}
+
+@property --secondary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #886195;
+}
+
+@property --dark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2f4858;
+}
+
+.color1 {
+    background-color: var(--primary);
+}
+
+.color1 div:after {
+    content: toString(var(--primary));
+}
+
+.color2 {
+    background-color: #f57570;
+}
+
+.color3 {
+    background-color: var(--secondary);
+}
+
+.color4 {
+    background-color: #f53538;
+}
+
+.color5 {
+    background-color: #2ccd7a;
+}
+
+.color6 {
+    background-color: #0093ff;
+}
+
+
+.hero.is-primary {
+    background: #FF9C46;
+    background: linear-gradient(90deg, rgba(255, 156, 70, 1) 0%, rgba(245, 117, 112, 1) 100%);
+}
+
+.is-primary:not(.is-outlined) {
+    background-color: var(--primary) !important;
+    color: white;
+}
+
+.is-primary.is-outlined {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 10px !important;
+}
+
+.is-secondary:not(.is-outlined) {
+    background-color: var(--secondary) !important;
+    color: white;
+}
+
+.is-secondary.is-outlined {
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.has-text-primary {
+    color: var(--primary) !important;
+}
+
+.has-text-secondary {
+    color: var(--secondary) !important;
+}
+
+body {
+    font-family: Oswald, sans-serif;
+}
+
+#bigtitle,
+.title,
+.subtitle {
+    font-family: Passion One, sans-serif;
+}
+
+.title {
+    font-size: 100px;
+    color: var(--primary);
+    /* background: -webkit-linear-gradient(var(--primary), #f57570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.subtitle {
+    font-size: 50px;
+}
+
+.is-success {
+    background-color: #2ccd7a;
+}
+
+#burger {
+    color: var(--primary);
+    transition: background-color .5s, color .5s;
+    border-radius: 5px;
+    padding: 0px;
+    z-index: 6666;
+    padding: 10px;
+}
+
+#burger:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+#burger-checkbox:checked~#burger:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+#burger .material-symbols-outlined {
+    display: block;
+}
+
+
+
+#dcmenu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: -100vh;
+    background: #FF9C46;
+    background: linear-gradient(90deg, rgba(255, 156, 70, 1) 0%, rgba(245, 117, 112, 1) 100%);
+    z-index: 666;
+    transition: top .5s;
+}
+
+#dcmenu .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+
+#dcmenu a {
+    display: block;
+    border-radius: .375rem;
+    transition: color .25s, background-color .5s;
+}
+
+#dcmenu a:hover {
+    color: white;
+    background: #FF9C46;
+    background: linear-gradient(90deg, rgba(255, 156, 70, 1) 0%, rgba(245, 117, 112, 1) 100%);
+}
+
+#burger-checkbox:checked+#dcmenu {
+    top: 0px
+}
+
+#burger-checkbox:checked~#burger {
+    color: white;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+#bigtitle {
+    font-size: 100px;
+    color: white;
+    font-weight: 800;
 }

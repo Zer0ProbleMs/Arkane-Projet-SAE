@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/homepage.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon"
         href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
- </head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,chevron_right" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
 
 <body>
     <div class="second-body">
@@ -41,29 +51,23 @@
                             <div class="navbar-end">
                                 <div class="navbar-item">
                                     <div class="buttons has-addons m-0 is-relative arkane-menu">
-                                        <div class="sub-buttons"></div>
-                                        <div class="p-0 m-0 buttons-frame"></div>
-                                        <a href="index.html" class="button is-medium is-white is-outlined p-3 active">
-                                            <div>Accueil</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="jeux.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Jeux</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="history.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Histoire</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="equipe.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Coulisses</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="economie.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Economie</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-
+                                        <input id="burger-checkbox" type="checkbox">
+                                        <div id="dcmenu">
+                                            <div class="box">
+                                                <div class="buttons">
+                                                    <a href="index.html" class="button is-primary is-fullwidth is-large is-outlined">Accueil</a>
+                                                    <a href="history.html" class="button is-primary is-fullwidth is-large is-outlined">Histoire</a>
+                                                    <a href="jeux.html" class="button is-primary is-fullwidth is-large is-outlined">Jeux</a>
+                                                    <a href="equipe.html" class="button is-primary is-fullwidth is-large is-outlined">Coulisses</a>
+                                                    <a href="economie.html" class="button is-primary is-fullwidth is-large is-outlined">Economie</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label id="burger" for="burger-checkbox">
+                                            <span class="material-symbols-outlined" style="font-size: 50px;">
+                                                menu
+                                            </span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -74,12 +78,7 @@
 
             <div class="hero-body" style="z-index: 100;">
                 <div class="has-text-centered m-auto">
-                    <img alt="images/Arkane_Icon_white_on_black-01.png" sizes="120px"
-                        srcset="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 120w, https://res.cloudinary.com/dewzjk72j/image/authenticated/s--jeoBYfFd--/c_lfill,w_240/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 240w"
-                        src="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz"
-                        style="--focal-direction-x:center;--focal-direction-y:center" data-focal-direction-x="center"
-                        data-focal-direction-y="center">
-                    <p class="title">Arkane Studios</p>
+                    <p id="bigtitle">Arkane Studios</p>
                 </div>
             </div>
             <div class="hero-foot">
@@ -91,9 +90,10 @@
                 </div>
             </div>
         </section>
-        <section id="section1" class="section is-fullheight" style="background-color: red;">
-            <div class="container-fluid has-background-white">
-                <div class="columns">
+        <!-- <section id="section1" class="section is-fullheight">
+            <div class="container-fluid">
+                <h2 class="title">Dernieres Actualités</h2>
+                <div class="columns" style="background-color: unset;">
                     <div class="column">
                         <div class="card">
                             <div class="card-image">
@@ -176,125 +176,169 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="section2" class="section is-fullheight" style="background-color: blue;">
+        </section>-->
+        <section id="section2" class="section is-fullheight">
             <div class="container">
+                <!--<h2 class="title">Aux origines d’un univers</h2>
+                <h3 class="subtitle">L’histoire d’un studio qui a redéfini les frontières du jeu vidéo.</h3>-->
+                <h2 class="title">Arkane Studios</h2>
+                <h3 class="subtitle">L’art de créer des mondes à part</h3>
+
+                <p class="content">Depuis ses débuts, Arkane Studios façonne des univers où chaque détail raconte une
+                    histoire et où
+                    chaque choix peut changer le cours de l’aventure. Du charme sombre de Dishonored aux mystères de
+                    Prey, le studio français s’est imposé comme une référence du jeu vidéo grâce à son approche
+                    singulière : laisser au joueur la liberté d’explorer, d’expérimenter et d’écrire sa propre histoire.
+                </p>
+
                 <p class="content">
-                    Founded in 1999, Arkane® Studios has grown to become one of the most renowned and
-                    critically acclaimed development teams in the video game industry. Arkane has earned a reputation
-                    for
-                    creating games with unique style, immersive action, and a hand-crafted approach. The studio’s
-                    titles,
-                    which include Dishonored®, Dishonored 2, Prey®, and DEATHLOOP™ have won hundreds of prestigious
-                    accolades around the globe, including several "Game of the Year" awards.
+                    Mais derrière ces mondes fascinants se cache une histoire faite d’ambition, de créativité et de
+                    prises de risques. Des premiers projets aux grandes productions internationales, Arkane a su
+                    développer une identité reconnaissable, portée par un goût prononcé pour l’immersion, les univers
+                    travaillés et les possibilités multiples offertes aux joueurs.
+                </p>
+
+                <p class="content">
+                    Comment ce studio français est-il devenu l’un des noms incontournables du jeu vidéo immersif ? Des
+                    origines lyonnaises aux succès qui ont marqué son parcours, découvrez l’histoire d’Arkane Studios,
+                    entre visions artistiques, jeux cultes et tournants décisifs.
+                </p>
+                <p class="content">
+                    Une histoire de liberté, d’immersion et de mondes qui ne demandent qu’à être explorés.
+                </p>
+
+                <p class="content pt-5">
+                    <a class="button is-primary is-medium is-pulled-right" href="history.html">
+                        Découvrez l'histoire complète d'Arkane
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </p>
                 </p>
             </div>
         </section>
-        <section id="section3" class="section is-fullheight">
-            <div class="timeline" style="margin: auto;">
-                <header class="timeline-header">
-                    <span class="tag is-medium is-link">2024</span>
-                </header>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Janvier 2024</p>
-                        <p>Licenciement de 1900 employés (sur 22000, soit 9%)</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Mai 2024</p>
-                        <p>Fermeture de <strong>Arkane Austin</strong> suite à l'échec de Redfall</p>
-                        <p>Fermeture de <strong>Alpha Dog Games</strong></p>
-                        <p>Fermeture de <strong>Roundhouse Studios</strong></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Août 2024</p>
-                        <p>Rachat de <strong>Tango Gameworks</strong> par <strong>Krafton</strong></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Septembre 2024</p>
-                        <p>650 licenciements</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Juillet 2025</p>
-                        <p>Nouvelle vague de 6000 licenciements (toutes divisions confondues)</p>
-                        <p>De nombreux studios sont impactés, dont <strong>Raven Software</strong> et <strong>Turn
-                                10</strong></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Juillet 2025</p>
-                        <p>Fermeture de <strong>The initiative</strong></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Juillet 2026</p>
-                        <p>3200 licenciements, dont 1600 prévus d'ici la fin de l'année fiscale</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Août 2026</p>
-                        <p><strong>Compulsion Games</strong> retrouve son indépendance</p>
-                        <p><strong>Double Fine Productions</strong> retrouve son indépendance</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-danger"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Septembre 2026</p>
-                        <p><strong>Undead Labs</strong> retrouve son indépendance</p>
-                        <p><strong>Halo Studios</strong> voit sa taille réduite et le développement de Halo lui est
-                            retiré pour être confié à <strong>Activision</strong></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-warning"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Octobre 2026</p>
-                        <p>Ninja Theory : licenciements massifs en cours, fermeture probable</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-warning"></div>
-                    <div class="timeline-content">
-                        <p class="heading">Aujourd'hui</p>
-                        <p>Arkane Studios : discussions en cours sur une éventuelle scission/fermeture</p>
-                    </div>
-                </div>
-                <footer class="timeline-footer">
-                    <span class="tag is-medium is-link">2027</span>
-                </footer>
+
+        <section id="section3" class="section is-fullheight p-0 is-fixed-top" style="overflow: hidden;">
+            <div class="games">
+                <img src="images/jeux/ArxFatalis.jpg" alt="Placeholder image" />
+                <img src="images/jeux/Blade.jpg" alt="Placeholder image" />
+                <img src="images/jeux/Deathloop.jpg" alt="Placeholder image" />
+                <img src="images/jeux/Dishonored_DLC_BrigmoreWitches.jpg" alt="Placeholder image" />
+                <img src="images/jeux/Dishonored_DLC_DunwallCity.jpg" alt="Placeholder image" />
+                <img src="images/jeux/Dishonored_DLC_KnifeDunwall_Box.jpg" alt="Placeholder image" />
+                <img src="images/jeux/Dishonored_DLC_VoidWalkers.jpg" alt="Placeholder image" />
+                <img src="images/jeux/dishonored2.jpg" alt="Placeholder image" />
+                <img src="images/jeux/prey_digital_deluxe.jpg" alt="Placeholder image" />
+                <img src="images/jeux/prey_mooncrash.jpg" alt="Placeholder image" />
+            </div>
+            <div class="games-overlay"></div>
+            <div class="container">
+                <h2 class="title">Des mondes à explorer</h2>
+                <h3 class="subtitle has-text-white">
+                    Des expériences uniques, des univers inoubliables.
+                </h3>
+                <p class="content has-text-white">
+                    De Dishonored à Prey, en passant par Deathloop, les jeux d’Arkane Studios se distinguent par leur
+                    créativité, leur liberté d’action et leur richesse narrative. Chaque titre propose une expérience
+                    singulière, où exploration, choix et imagination se rencontrent pour laisser une empreinte durable.
+                </p>
+                <p class="content pt-5">
+                    <a class="button is-primary is-medium is-pulled-right" href="jeux.html">
+                        Découvrez les jeux qui ont façonné l’identité du studio
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </p>
+
             </div>
         </section>
+        <section id="section4" class="section is-fullheight">
+            <div class="container">
+                <h2 class="title">Dans l’ombre de la création</h2>
+                <h3 class="subtitle">Plongez dans les coulisses d’un studio où créativité, travail d’équipe et défis de
+                    production façonnent les mondes du jeu vidéo.</h3>
+                <p class="content">Derrière les univers fascinants d’Arkane Studios se cache une entreprise façonnée par
+                    la passion du jeu vidéo, une vision artistique forte et le travail collectif de nombreux talents.
+                    Des premières esquisses aux dernières heures de développement, chaque jeu est le fruit d’un
+                    processus complexe où se rencontrent créativité, contraintes techniques et ambitions démesurées.
+
+                </p>
+                <p class="content">
+                    Mais créer des mondes aussi riches ne se résume pas à une bonne idée. C’est aussi une aventure
+                    humaine, faite de collaborations, de choix stratégiques et de défis qui façonnent l’identité du
+                    studio. Organisation des équipes, méthodes de production, culture d’entreprise et relations avec les
+                    éditeurs : autant de facettes qui permettent de comprendre ce qui se joue derrière l’écran.
+                </p>
+                <p class="content">
+                    Comment fonctionne Arkane au quotidien ? Qui sont les personnes qui donnent vie à ses univers, et
+                    quelles réalités se cachent derrière la création de jeux aussi ambitieux ?
+                </p>
+
+                <p class="content pt-5">
+                    <a class="button is-primary is-medium is-pulled-right" href="equipe.html">
+                        Explorer les coulisses d’Arkane Studios
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span></a>
+                </p>
+                </p>
+            </div>
+        </section>
+        <section id="section5" class="section is-fullheight">
+            <div class="container">
+                <h2 class="title">Arkane en chiffres</h2>
+
+                <h3 class="subtitle has-text-white">Des années de création, des mondes marquants.</h3>
+
+                <p class="content has-text-white">
+                    Derrière les univers qui ont marqué les joueurs, Arkane Studios a connu des années de création,
+                    d'ambition et de transformations. Mais son histoire est aussi faite de périodes plus difficiles,
+                    entre projets aux destins contrastés, restructurations et incertitudes liées à l'avenir du studio. À
+                    travers quelques chiffres clés, découvrez l'ampleur de son parcours, les succès qui ont forgé sa
+                    réputation et les défis qui ont marqué son évolution.
+                </p>
+                <p class="content">
+                    <a href="economie.html" class="button is-primary is-medium is-pulled-right">
+                        Découvrir les chiffres clés
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Arkane Studios
+                </p>
+                <p>
+                    Credits: Damien CORTINA
+                </p>
+            </div>
+        </footer>
     </div>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                Arkane Studios
-            </p>
-            <p>
-                Credits: Damien CORTINA
-            </p>
-        </div>
-    </footer>
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.dots.min.js"></script>
+<script>
+    VANTA.DOTS({
+        el: "#section5",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        size: 2.40,
+        spacing: 34.00,
+        showLines: false,
+        backgroundColor: 0x000000
+    })
+</script>
 
 </html>
