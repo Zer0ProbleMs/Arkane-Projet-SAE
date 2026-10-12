@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,483 +8,569 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles/jeux_style.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
 </head>
+
 <body class="default-background">
-<section class="hero is-fullheight" style="position: absolute; top: 0; left: 0; width: 100%; box-shadow: px 10px 10px white">
-    <div class="hero-head">
-        <nav class="navbar is-fixed-top" style="z-index: 1000;">
-            <div class="container">
-                <div id="navMenu" class="navbar-menu">
-                    <div class="navbar-start">
-                        <a href="index.html" class="navbar-item">
-                            <img alt="images/Arkane_Icon_white_on_black-01.png" sizes="120px"
-                                 srcset="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 120w, https://res.cloudinary.com/dewzjk72j/image/authenticated/s--jeoBYfFd--/c_lfill,w_240/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 240w"
-                                 src="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz"
-                                 style="--focal-direction-x:center;--focal-direction-y:center"
-                                 data-focal-direction-x="center" data-focal-direction-y="center">
-                        </a>
-                    </div>
+    <section class="hero is-fullheight"
+        style="position: absolute; top: 0; left: 0; width: 100%; box-shadow: white 10px 10px">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top" style="z-index: 1000;">
+                <div class="container">
+                    <div id="navMenu" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a href="index.html" class="navbar-item">
+                                <img alt="images/Arkane_Icon_white_on_black-01.png" sizes="120px"
+                                    srcset="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 120w, https://res.cloudinary.com/dewzjk72j/image/authenticated/s--jeoBYfFd--/c_lfill,w_240/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz 240w"
+                                    src="https://res.cloudinary.com/dewzjk72j/image/authenticated/s--2gdXYG7J--/c_lfill,w_120/f_auto:image,q_auto/v1/cms/6rPRoLtiK23cfccVQQKfJZ-Arkane_Icon_white_on_black-01_beuthz"
+                                    style="--focal-direction-x:center;--focal-direction-y:center"
+                                    data-focal-direction-x="center" data-focal-direction-y="center">
+                            </a>
+                        </div>
                         <div class="navbar-end">
                             <div class="buttons has-addons">
-                            <div class="navbar-item">
-                                <div class="buttons has-addons m-0 is-relative arkane-menu">
-                                    <div class="sub-buttons"></div>
-                                    <div class="p-0 m-0 buttons-frame"></div>
-                                    <a href="index.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Accueil</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="jeux.html" class="button is-medium is-white is-outlined p-3 active">
-                                        <div>Jeux</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="history.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Histoire</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="equipe.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Coulisses</div>
-                                        <div class="button-underline"></div>
-                                    </a>
-                                    <a href="economie.html" class="button is-medium is-white is-outlined p-3">
-                                        <div>Economie</div>
-                                        <div class="button-underline"></div>
-                                    </a>
+                                <div class="navbar-item">
+                                    <div class="buttons has-addons m-0 is-relative arkane-menu">
+                                        <div class="sub-buttons"></div>
+                                        <div class="p-0 m-0 buttons-frame"></div>
+                                        <a href="index.html" class="button is-medium is-white is-outlined p-3">
+                                            <div>Accueil</div>
+                                            <div class="button-underline"></div>
+                                        </a>
+                                        <a href="jeux.html" class="button is-medium is-white is-outlined p-3 active">
+                                            <div>Jeux</div>
+                                            <div class="button-underline"></div>
+                                        </a>
+                                        <a href="history.html" class="button is-medium is-white is-outlined p-3">
+                                            <div>Histoire</div>
+                                            <div class="button-underline"></div>
+                                        </a>
+                                        <a href="equipe.html" class="button is-medium is-white is-outlined p-3">
+                                            <div>Coulisses</div>
+                                            <div class="button-underline"></div>
+                                        </a>
+                                        <a href="economie.html" class="button is-medium is-white is-outlined p-3">
+                                            <div>Economie</div>
+                                            <div class="button-underline"></div>
+                                        </a>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="hero is-halfheight">
+        <figure class="overlay background">
+            <img src="images/Prey_Character.png" alt="style_cover">
+        </figure>
+        <div class="hero-body">
+            <div class="has-text-centered m-auto">
+                <p class="title is-size-1">Jeux</p>
             </div>
-        </nav>
-    </div>
-</section>
-
-<section class="hero is-halfheight">
-    <figure class="overlay background">
-        <img src="images/Prey_Character.png" alt="style_cover">
-    </figure>
-    <div class="hero-body">
-        <div class="has-text-centered m-auto">
-            <p class="title is-size-1">Jeux</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Avertissement -->
-<section class="section warning-section">
-    <div class="container">
-        <div class="warning has-text-centered">
-            <h1>Site en construction. Le contenu présenté ici est susceptible d'évoluer.</h1>
+    <!-- Avertissement -->
+    <section class="section warning-section">
+        <div class="container">
+            <div class="warning has-text-centered">
+                <h1>Site en construction. Le contenu présenté ici est susceptible d'évoluer.</h1>
+            </div>
+            <div class="information has-text-centered">
+                <h1>
+                    Ce site est un projet d'étudiants en première année de BUT à l'Université de Franche-Comté.
+                    <br>
+                    Il s'agit d'un site vitrine (non-officiel) pour la société française Arkane Studios, spécialisée
+                    dans le développement de jeux-vidéos.
+                </h1>
+            </div>
         </div>
-        <div class="information has-text-centered">
-            <h1>
-                Ce site est un projet d'étudiants en première année de BUT à l'Université de Franche-Comté.
-                <br>
-                Il s'agit d'un site vitrine (non-officiel) pour la société française Arkane Studios, spécialisée dans le développement de jeux-vidéos.
-            </h1>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="section2" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover" >
-                <img src="images/jeux/Blade.jpg" alt="marvel_blade_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr-FR/news/marvels-blade-announced" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
+    <section id="section2" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Blade.jpg" alt="marvel_blade_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr-FR/news/marvels-blade-announced" class="button"
+                                target="_blank" rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> MARVEL'S BLADE </strong></h1>
+                            <p class="has-text-centered">
+                                <strong> Blade </strong> est un chasseur de vampires, mi-humain et mi-vampire.
+                                Alors qu'une invasion de vampires touche Paris, la ville est placée en quarantaine.
+                                <strong> Blade </strong> se retrouve impliqué dans les événements et doit combattre les
+                                vampires qui se sont installés dans la ville.
+                                Il cherche également à comprendre l'origine de cette invasion et les raisons qui se
+                                cachent
+                                derrière celle-ci.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Redfall.jpg" alt="redfall_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/en/game/redfall" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong>Redfall</strong></h1>
+                            <p class="has-text-centered">
+                                <strong>Redfall</strong> est une île isolée du reste du monde après l'arrivée d'une
+                                population de vampires.
+                                Ces derniers ont pris le contrôle de la ville et empêchent toute personne d'y entrer ou
+                                d'en
+                                sortir.
+                                Plusieurs survivants possédant chacun des capacités différentes tentent de résister à
+                                cette
+                                situation.
+                                Ils doivent explorer l'île, découvrir ce qui a provoqué l'invasion et affronter les
+                                vampires
+                                qui contrôlent désormais <strong>Redfall.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/ArxFatalis.jpg" alt="ArxFatalis_cover">
+                        <div class="overlay">
+                            <a href="https://store.steampowered.com/app/1700/Arx_Fatalis/" class="button"
+                                target="_blank" rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Arx Fatalis </strong></h1>
+                            <p class="has-text-centered">
+                                Dans le monde d'<strong>Arx</strong>, le soleil a disparu et les différentes populations
+                                ont
+                                été contraintes de vivre sous terre.
+                                Le joueur incarne un personnage qui se réveille en prison sans aucun souvenir de son
+                                passé.
+                                En cherchant à comprendre qui il est, il découvre les différentes civilisations
+                                installées
+                                dans les profondeurs.
+                                Son histoire finit par être liée au retour d'<strong>Akbaa</strong>, un ancien dieu
+                                cherchant à détruire le monde.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/prey.jpg" alt="prey_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/prey" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Prey </strong></h1>
+                            <p class="has-text-centered">
+                                <strong>Morgan Yu</strong> se réveille à bord de <strong>Talos I</strong>, une station
+                                spatiale appartenant à l'entreprise <strong>TranStar</strong> .
+                                La station est presque entièrement abandonnée après une attaque de créatures
+                                extraterrestres
+                                appelées <strong>Typhons.</strong>
+                                <strong>Morgan</strong> découvre progressivement des informations sur l'incident et sur
+                                les
+                                expériences menées à bord de la station.
+                                En avançant dans l'histoire, il doit également comprendre ce qui lui est arrivé avant
+                                son
+                                réveil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/prey_mooncrash.jpg" alt="prey_mooncrash_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/prey-dlc" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Prey: Mooncrash </strong></h1>
+                            <p class="has-text-centered">
+                                L'histoire se déroule sur une base de <strong>TranStar</strong> située sur la Lune, qui
+                                a
+                                perdu tout contact avec l'entreprise.
+                                Le joueur doit découvrir ce qui s'est passé sur la base et trouver un moyen de s'en
+                                échapper.
+                                Plusieurs personnages peuvent être contrôlés, chacun ayant sa propre histoire et ses
+                                propres
+                                capacités.
+                                Les événements et les dangers rencontrés changent au cours des différentes tentatives
+                                d'évasion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/prey_digital_deluxe.jpg" alt="prey_digital_deluxe">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/buy-prey?section=feature-57WTlCsf5TXqVlIOxmZnF6 "
+                                class="button" target="_blank" rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong>Prey: Digital Deluxe</strong></h1>
+                            <p class="has-text-centered">
+                                Cette édition comprend l'histoire principale de <strong>Prey</strong> ainsi que son
+                                extension Mooncrash.
+                                Dans <strong>Prey</strong>, <strong>Morgan Yu</strong> enquête sur une invasion
+                                extraterrestre à bord de la station <strong>Talos I.</strong>
+                                Dans Mooncrash, l'histoire se déplace sur une base de <strong>TranStar</strong> située
+                                sur
+                                la Lune, où plusieurs survivants cherchent à s'échapper après une attaque.
+                                Les deux histoires se déroulent dans le même univers et sont liées aux activités de
+                                <strong>TranStar et aux Typhons.</strong>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Dishonored.jpg" alt="Dishonored_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Dishonored </strong></h1>
+                            <p class="has-text-centered">
+                                <strong>Corvo Attano</strong> est le protecteur personnel de l'impératrice de
+                                <strong>Dunwall</strong>.
+                                Lors de son retour en ville, il assiste à son assassinat et est accusé du crime.
+                                Après son évasion, <strong>Corvo</strong> rejoint un groupe qui cherche à renverser le
+                                régime responsable de la situation.
+                                Au cours de son enquête, il découvre les responsables de la mort de l'impératrice ainsi
+                                que
+                                les liens entre le pouvoir politique et les événements qui frappent
+                                <strong>Dunwall</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/dishonored2.jpg" alt="Dishonored2_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored2" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Dishonored 2 </strong></h1>
+                            <p class="has-text-centered">
+                                Plusieurs années après les événements du premier jeu, <strong>Emily Kaldwin</strong>
+                                règne
+                                sur <strong>Dunwall</strong>.
+                                Un mystérieux personnage apparaît et revendique le trône, obligeant
+                                <strong>Emily</strong> à
+                                quitter la ville.
+                                Le joueur peut incarner <strong>Emily ou Corvo Attano</strong> et partir à
+                                <strong>Karnaca</strong> pour enquêter sur l'usurpateur.
+                                Leur recherche révèle progressivement les liens entre les événements actuels et certains
+                                personnages du passé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section6" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Dishonored_DLC_KnifeDunwall_Box.jpg"
+                            alt="Dishonored_DLC_KnifeDunwall_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Dishonored: The Knife Of Dunwall </strong>
+                            </h1>
+                            <p class="has-text-centered">
+                                Cette extension raconte les événements de <strong>Dishonored</strong> du point de vue de
+                                <strong>Daud</strong>, l'assassin qui a tué l'impératrice.
+                                Après cet assassinat, <strong>Daud</strong> commence à remettre en question ses propres
+                                actions.
+                                Il apprend l'existence d'une femme appelée <strong>Delilah</strong> et cherche à
+                                découvrir
+                                qui elle est et quel rôle elle joue dans les événements.
+                                Son enquête le conduit à travers plusieurs quartiers de <strong>Dunwall</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Dishonored_DLC_BrigmoreWitches.jpg"
+                            alt="Dishonored_DLC_Brigmorewitches_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Dishonored: The Brigmore Witches </strong>
+                            </h1>
+                            <p class="has-text-centered">
+                                L'histoire reprend après les événements de <strong>The Knife Of Dunwall</strong>.
+                                <strong>Daud</strong> poursuit ses recherches sur <strong>Delilah</strong> et découvre
+                                qu'elle dirige un groupe de sorcières appelé <strong>les Sorcières de Brigmore.</strong>
+                                Il doit se rendre dans leur quartier et affronter leurs membres pour comprendre leurs
+                                intentions.
+                                Cette histoire permet également de relier les événements de <strong>Daud</strong> à ceux
+                                du
+                                premier <strong>Dishonored.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section7" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Dishonored_DLC_DunwallCity.jpg" alt="Dishonored_DLC_DunwallCity_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Dishonored: Dunwall City Trials </strong>
+                            </h1>
+                            <p class="has-text-centered">
+                                <strong>Dunwall City Trials</strong> est une extension composée de plusieurs épreuves
+                                indépendantes.
+                                Elle ne poursuit pas directement l'histoire de <strong>Corvo</strong> ou des autres
+                                personnages principaux.
+                                Les épreuves demandent au joueur d'utiliser les différentes capacités, armes et
+                                mécanismes
+                                du jeu.
+                                Certaines sont basées sur le combat, d'autres sur l'infiltration ou la résolution de
+                                situations particulières.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Dishonored_DLC_VoidWalkers.jpg" alt="Dishonered_voidwalker_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+
+                    </figure>
+                    <div class="container">
+                        <div class="container">
+                            <div class="box is-half default-background">
+                                <h1 class="mon-titre has-text-centered"><strong> Dishonored: Void Walker's Arsenal
+                                    </strong></h1>
+                                <p class="has-text-centered">
+                                    <strong>Void Walker's Arsenal</strong> est un contenu supplémentaire qui ajoute
+                                    différents bonus à l'aventure de <strong>Dishonored.</strong>
+                                    Il comprend notamment des charmes, des améliorations et des objets supplémentaires.
+                                    Ces éléments permettent de modifier certains aspects de l'expérience de jeu.
+                                    <strong> Il ne s'agit pas d'une nouvelle histoire indépendante.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section8" class="section">
+        <div class="container">
+            <div class="columns is-variable is-100">
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Dishonored-DotO.jpg" alt="Dishonored-DotO_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/dishonored-doto" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Dishonored: Death of the Outsider </strong>
+                            </h1>
+                            <p class="has-text-centered">
+                                <strong>Billie Lurk</strong> , ancienne alliée de <strong>Daud</strong> , retrouve son
+                                ancien mentor plusieurs années après les événements précédents.
+                                <strong>Daud</strong> lui demande de l'aider à retrouver l'<strong>Outsider</strong>,
+                                une
+                                mystérieuse entité liée au Vide.
+                                Ils décident finalement de chercher un moyen de le tuer.
+                                Leur enquête les conduit à travers <strong>Karnaca</strong> et révèle davantage
+                                d'informations sur l'origine de l'<strong>Outsider</strong> et sur son influence dans
+                                l'histoire de <strong>Dishonored</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image grow-hover">
+                        <img src="images/jeux/Deathloop.jpg" alt="Deathloop_cover">
+                        <div class="overlay">
+                            <a href="https://bethesda.net/fr/game/deathloop" class="button" target="_blank"
+                                rel="noopener noreferrer">
+                                Découvrir
+                            </a>
+                        </div>
+                    </figure>
+                    <div class="container">
+                        <div class="box is-half default-background">
+                            <h1 class="mon-titre has-text-centered"><strong> Deathloop </strong></h1>
+                            <p class="has-text-centered">
+                                <strong>Colt</strong> se réveille sur l'<strong>île de Blackreef</strong> sans
+                                comprendre
+                                pourquoi il revit constamment la même journée.
+                                Les habitants de l'île sont eux aussi liés à cette boucle temporelle et cherchent à la
+                                maintenir.
+                                Pour mettre fin à la boucle, <strong>Colt</strong> doit éliminer huit personnes appelées
+                                les
+                                <strong>Visionnaires</strong> avant la fin de la journée.
+                                Pendant ses recherches, il est poursuivi par <strong>Julianna</strong>, une autre
+                                personne
+                                capable de se souvenir des différentes journées et qui cherche à empêcher
+                                <strong>Colt</strong> de briser la boucle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer primary-background">
+        <div class="has-text-centered">
+            <p>
+                .DotElement
+            </p>
+            <p>
+                Credits: Anfel DERARDJA
+            </p>
+            <hr class="separator">
+            <div class="columns is-centered">
+                <div class="column is-narrow">
+                    <a href="https://www.facebook.com/ArkaneStudios/" target="_blank">
+                        <img src="images/Logo/Facebook_Icon.svg" alt="Icon Facebook" class="logo grow-hover">
                     </a>
                 </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                   <h1 class="mon-titre has-text-centered"><strong> MARVEL'S BLADE </strong></h1>
-                   <br>    
-            <strong> Blade </strong> est un chasseur de vampires, mi-humain et mi-vampire. 
-            Alors qu'une invasion de vampires touche Paris, la ville est placée en quarantaine. 
-            <strong> Blade </strong> se retrouve impliqué dans les événements et doit combattre les vampires qui se sont installés dans la ville. 
-            Il cherche également à comprendre l'origine de cette invasion et les raisons qui se cachent derrière celle-ci.
-            </p>
-            </div>
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Redfall.jpg" alt="redfall_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/en/game/redfall" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
+                <div class="column is-narrow">
+                    <a href="https://fr.linkedin.com/company/arkane-studios" target="_blank">
+                        <img src="images/Logo/LinkedIn_Icon.svg" alt="Icon LinkedIn" class="logo grow-hover">
                     </a>
                 </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                   <h1 class="mon-titre has-text-centered"><strong>Redfall</strong></h1>
-                   <br>
-                   <strong>Redfall</strong> est une île isolée du reste du monde après l'arrivée d'une population de vampires. 
-                   Ces derniers ont pris le contrôle de la ville et empêchent toute personne d'y entrer ou d'en sortir. 
-                   Plusieurs survivants possédant chacun des capacités différentes tentent de résister à cette situation. 
-                   Ils doivent explorer l'île, découvrir ce qui a provoqué l'invasion et affronter les vampires qui contrôlent désormais <strong>Redfall.</strong> 
-            </p>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section id="section3" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/ArxFatalis.jpg" alt="ArxFatalis_cover">
-                <div class="overlay">
-                    <a href="https://store.steampowered.com/app/1700/Arx_Fatalis/" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
+                <div class="column is-narrow">
+                    <a href="https://x.com/ArkaneStudios" target="_blank">
+                        <img src="images/Logo/X_Logo.svg" alt="Icon X" class="logo grow-hover">
                     </a>
                 </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Arx Fatalis </strong></h1>
-                <br>
-                Dans le monde d'<strong>Arx</strong>, le soleil a disparu et les différentes populations ont été contraintes de vivre sous terre. 
-                Le joueur incarne un personnage qui se réveille en prison sans aucun souvenir de son passé. 
-                En cherchant à comprendre qui il est, il découvre les différentes civilisations installées dans les profondeurs. 
-                Son histoire finit par être liée au retour d'<strong>Akbaa</strong>, un ancien dieu cherchant à détruire le monde.
-            </p>
             </div>
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/prey.jpg" alt="prey_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/prey" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Prey </strong></h1>
-                <br>
-               <strong>Morgan Yu</strong>  se réveille à bord de <strong>Talos I</strong>, une station spatiale appartenant à l'entreprise <strong>TranStar</strong> . 
-                La station est presque entièrement abandonnée après une attaque de créatures extraterrestres appelées <strong>Typhons.</strong>  
-                <strong>Morgan</strong>  découvre progressivement des informations sur l'incident et sur les expériences menées à bord de la station. 
-                En avançant dans l'histoire, il doit également comprendre ce qui lui est arrivé avant son réveil.
-            </p>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section id="section4" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/prey_mooncrash.jpg" alt="prey_mooncrash_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/prey-dlc" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Prey: Mooncrash </strong></h1>
-                <br>
-                L'histoire se déroule sur une base de <strong>TranStar</strong> située sur la Lune, qui a perdu tout contact avec l'entreprise. 
-                Le joueur doit découvrir ce qui s'est passé sur la base et trouver un moyen de s'en échapper. 
-                Plusieurs personnages peuvent être contrôlés, chacun ayant sa propre histoire et ses propres capacités. 
-                Les événements et les dangers rencontrés changent au cours des différentes tentatives d'évasion.
-            </p>
-            </div> 
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/prey_digital_deluxe.jpg" alt="prey_digital_deluxe">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/buy-prey?section=feature-57WTlCsf5TXqVlIOxmZnF6 " class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong>Prey: Digital Deluxe</strong></h1>
-                <br>
-                Cette édition comprend l'histoire principale de <strong>Prey</strong>  ainsi que son extension Mooncrash. 
-                Dans <strong>Prey</strong>, <strong>Morgan Yu</strong>  enquête sur une invasion extraterrestre à bord de la station <strong>Talos I.</strong>  
-                Dans Mooncrash, l'histoire se déplace sur une base de <strong>TranStar</strong>  située sur la Lune, où plusieurs survivants cherchent à s'échapper après une attaque. 
-                Les deux histoires se déroulent dans le même univers et sont liées aux activités de <strong>TranStar et aux Typhons.</strong> 
-
-            </p>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section id="section5" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Dishonored.jpg" alt="Dishonored_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Dishonored </strong></h1>
-                <br>
-                <strong>Corvo Attano</strong>  est le protecteur personnel de l'impératrice de <strong>Dunwall</strong>. 
-                Lors de son retour en ville, il assiste à son assassinat et est accusé du crime. 
-                Après son évasion, <strong>Corvo</strong> rejoint un groupe qui cherche à renverser le régime responsable de la situation. 
-                Au cours de son enquête, il découvre les responsables de la mort de l'impératrice ainsi que les liens entre le pouvoir politique et les événements qui frappent <strong>Dunwall</strong>.
-            </p>
-            </div>
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/dishonored2.jpg" alt="Dishonored2_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored2" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Dishonored 2 </strong></h1>
-                <br>
-                Plusieurs années après les événements du premier jeu, <strong>Emily Kaldwin</strong> règne sur <strong>Dunwall</strong>. 
-                Un mystérieux personnage apparaît et revendique le trône, obligeant <strong>Emily</strong> à quitter la ville. 
-                Le joueur peut incarner <strong>Emily ou Corvo Attano</strong> et partir à <strong>Karnaca</strong> pour enquêter sur l'usurpateur. 
-                Leur recherche révèle progressivement les liens entre les événements actuels et certains personnages du passé.
-            </p>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section id="section6" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Dishonored_DLC_KnifeDunwall_Box.jpg" alt="Dishonored_DLC_KnifeDunwall_cover">
-            <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered">
-                <h1 class="mon-titre has-text-centered"><strong> Dishonored: The Knife Of Dunwall </strong></h1>
-                 <br>
-                 Cette extension raconte les événements de <strong>Dishonored</strong> du point de vue de <strong>Daud</strong>, l'assassin qui a tué l'impératrice. 
-                 Après cet assassinat, <strong>Daud</strong> commence à remettre en question ses propres actions. 
-                 Il apprend l'existence d'une femme appelée <strong>Delilah</strong> et cherche à découvrir qui elle est et quel rôle elle joue dans les événements. 
-                 Son enquête le conduit à travers plusieurs quartiers de <strong>Dunwall</strong>.
-            </p>
-            </div>
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Dishonored_DLC_BrigmoreWitches.jpg" alt="Dishonored_DLC_Brigmorewitches_cover">
-            <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-               <h1 class="mon-titre has-text-centered"><strong> Dishonored: The Brigmore Witches </strong></h1>
-               <br>
-               L'histoire reprend après les événements de <strong>The Knife Of Dunwall</strong>. 
-               <strong>Daud</strong> poursuit ses recherches sur <strong>Delilah</strong> et découvre qu'elle dirige un groupe de sorcières appelé <strong>les Sorcières de Brigmore.</strong>  
-               Il doit se rendre dans leur quartier et affronter leurs membres pour comprendre leurs intentions. 
-               Cette histoire permet également de relier les événements de <strong>Daud</strong>  à ceux du premier <strong>Dishonored.</strong> 
-            </p>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section id="section7" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Dishonored_DLC_DunwallCity.jpg" alt="Dishonored_DLC_DunwallCity_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Dishonored: Dunwall City Trials </strong></h1>
-                <br>
-               <strong>Dunwall City Trials</strong> est une extension composée de plusieurs épreuves indépendantes. 
-                Elle ne poursuit pas directement l'histoire de <strong>Corvo</strong> ou des autres personnages principaux. 
-                Les épreuves demandent au joueur d'utiliser les différentes capacités, armes et mécanismes du jeu. 
-                Certaines sont basées sur le combat, d'autres sur l'infiltration ou la résolution de situations particulières.
-            </p>
-            </div>
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Dishonored_DLC_VoidWalkers.jpg" alt="Dishonered_voidwalker_cover">
-                <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored#/dishonored" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            
-            </figure>
-            <div class="container">
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Dishonored: Void Walker's Arsenal </strong></h1>
-                <br>
-                <strong>Void Walker's Arsenal</strong> est un contenu supplémentaire qui ajoute différents bonus à l'aventure de <strong>Dishonored.</strong> 
-                Il comprend notamment des charmes, des améliorations et des objets supplémentaires. 
-                Ces éléments permettent de modifier certains aspects de l'expérience de jeu. 
-                <strong> Il ne s'agit pas d'une nouvelle histoire indépendante.</strong>
-            </p>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section id="section8" class="section">
-    <div class="container">
-    <div class="columns is-variable is-100"> 
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Dishonored-DotO.jpg" alt="Dishonored-DotO_cover">
-           <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/dishonored-doto" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Dishonored: Death of the Outsider </strong></h1>
-                <br>
-                <strong>Billie Lurk</strong> , ancienne alliée de <strong>Daud</strong> , retrouve son ancien mentor plusieurs années après les événements précédents. 
-                <strong>Daud</strong> lui demande de l'aider à retrouver l'<strong>Outsider</strong>, une mystérieuse entité liée au Vide.
-                Ils décident finalement de chercher un moyen de le tuer. 
-                Leur enquête les conduit à travers <strong>Karnaca</strong> et révèle davantage d'informations sur l'origine de l'<strong>Outsider</strong> et sur son influence dans l'histoire de <strong>Dishonored</strong>.
-            </p>
-            </div>
-            </div>
-        </div>
-        <div class="column">
-            <figure class="image grow-hover">
-                <img src="images/jeux/Deathloop.jpg" alt="Deathloop_cover">
-            <div class="overlay">
-                    <a href="https://bethesda.net/fr/game/deathloop" class="button" target="_blank" rel="noopener noreferrer">
-                        Découvrir
-                    </a>
-    </div>
-            </figure>
-            <div class="container">
-            <div class="box is-half default-background">
-            <p class="has-text-centered"> 
-                <h1 class="mon-titre has-text-centered"><strong> Deathloop </strong></h1>
-                <br>
-                <strong>Colt</strong> se réveille sur l'<strong>île de Blackreef</strong> sans comprendre pourquoi il revit constamment la même journée. 
-                Les habitants de l'île sont eux aussi liés à cette boucle temporelle et cherchent à la maintenir. 
-                Pour mettre fin à la boucle, <strong>Colt</strong> doit éliminer huit personnes appelées les <strong>Visionnaires</strong> avant la fin de la journée. 
-                Pendant ses recherches, il est poursuivi par <strong>Julianna</strong>, une autre personne capable de se souvenir des différentes journées et qui cherche à empêcher <strong>Colt</strong> de briser la boucle.
-            </p>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<footer class="footer primary-background">
-    <div class="has-text-centered">
-        <p>
-            .DotElement
-        </p>
-        <p>
-            Credits: Anfel DERARDJA
-        </p>
-        <hr class="separator">
-        <div class="columns is-centered">
-            <div class="column is-narrow">
-                <a href="https://www.facebook.com/ArkaneStudios/" target="_blank">
-                    <img src="images/Logo/Facebook_Icon.svg" alt="Icon Facebook" class="logo grow-hover">
-                </a>
-            </div>
-            <div class="column is-narrow">
-                <a href="https://fr.linkedin.com/company/arkane-studios" target="_blank">
-                    <img src="images/Logo/LinkedIn_Icon.svg" alt="Icon LinkedIn" class="logo grow-hover">
-                </a>
-            </div>
-            <div class="column is-narrow">
-                <a href="https://x.com/ArkaneStudios" target="_blank">
-                    <img src="images/Logo/X_Logo.svg" alt="Icon X" class="logo grow-hover">
-                </a>
-            </div>
-        </div>
 
 
 
 
-        <p style="opacity: 0.5; font-weight: lighter">
-            &copy 2026 Arkane Studios - Trademarks are the property of their respective owners. All Rights Reserved.
-        </p>
-    </div>
-</footer>
+            <p style="opacity: 0.5; font-weight: lighter">
+                &copy; 2026 Arkane Studios - Trademarks are the property of their respective owners. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
