@@ -5,6 +5,7 @@
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
+    transform: translateY(-200px);
 }
 
 .image.grow-hover img {
@@ -45,6 +46,16 @@
     text-align: center 10%;
 }
 
+#section2 .column > .container,
+#section3 .column > .container,
+#section4 .column > .container,
+#section5 .column > .container,
+#section6 .column > .container,
+#section7 .column > .container,
+#section8 .column > .container {
+    transform: translateY(-210px);
+}
+
 .hero.is-halfheight {
     min-height: 100vh;
     height: 100vh;
@@ -56,7 +67,7 @@
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 80%;
+    height: 60%;
     z-index: 0;
 }
 
@@ -70,7 +81,7 @@
 .hero .hero-body {
     position: relative;
     z-index: 10;
-    transform: translateY(-100px);
+    transform: translateY(-160px);
 }
 
 .overlay.background::after {
@@ -91,14 +102,6 @@
 .hero .hero-body {
     position: relative;
     z-index: 5;
-}
-
-
-.warning-section {
-    position: relative;
-    z-index: 20;
-    margin-top: -230px;
-    padding-top: 0;
 }
 
 h1.mon-titre {
