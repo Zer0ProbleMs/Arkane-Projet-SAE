@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon"
         href="https://cdnstatic.bethsoft.com/arkane-studios.com/img/favicon.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,chevron_right">
 </head>
 
 <body class="default-background">
@@ -29,36 +31,33 @@
                             </a>
                         </div>
                         <div class="navbar-end">
-                            <div class="buttons has-addons">
                                 <div class="navbar-item">
                                     <div class="buttons has-addons m-0 is-relative arkane-menu">
-                                        <div class="sub-buttons"></div>
-                                        <div class="p-0 m-0 buttons-frame"></div>
-                                        <a href="index.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Accueil</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="jeux.html" class="button is-medium is-white is-outlined p-3 active">
-                                            <div>Jeux</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="history.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Histoire</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="equipe.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Coulisses</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-                                        <a href="economie.html" class="button is-medium is-white is-outlined p-3">
-                                            <div>Economie</div>
-                                            <div class="button-underline"></div>
-                                        </a>
-
+                                        <input id="burger-checkbox" type="checkbox">
+                                        <div id="dcmenu">
+                                            <div class="box has-background-white">
+                                                <div class="buttons">
+                                                    <a href="index.html"
+                                                        class="button is-primary is-fullwidth is-large is-outlined">Accueil</a>
+                                                    <a href="history.html"
+                                                        class="button is-primary is-fullwidth is-large is-outlined">Histoire</a>
+                                                    <a href="jeux.html"
+                                                        class="button is-primary is-fullwidth is-large is-outlined">Jeux</a>
+                                                    <a href="equipe.html"
+                                                        class="button is-primary is-fullwidth is-large is-outlined">Coulisses</a>
+                                                    <a href="economie.html"
+                                                        class="button is-primary is-fullwidth is-large is-outlined">Economie</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label id="burger" for="burger-checkbox">
+                                            <span class="material-symbols-outlined" style="font-size: 50px;">
+                                                menu
+                                            </span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </nav>

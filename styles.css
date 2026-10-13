@@ -1,6 +1,24 @@
 @import url(https://db.onlinewebfonts.com/c/39beaf31467cad0b34d2db9f723b9b83?family=Emerge+BF+W01+Regular);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* -- Custom Static Classes -- */
+@property --primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #FF9C46;
+}
+
+@property --secondary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #886195;
+}
+
+@property --dark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2f4858;
+}
+
 .vl {
     border-left: 3px;
     height: 120px;
@@ -197,65 +215,87 @@ strong {
     background-color: black;
 }
 
-.arkane-menu:hover .sub-buttons {
-    top: 15px;
-    left: 30px;
-    transform: skewX(20deg);
-    border: 4px solid white;
-}
-
-.arkane-menu:hover .buttons-frame {
-    transform: skewX(20deg);
-    background-color: white;
-    color: black;
-}
-
-.arkane-menu .button {
-    border-radius: 0%;
-    border: unset;
-    transition: color .25s;
-    display: block;
-}
-
-.arkane-menu .button:hover {
-    border: unset;
-}
-
-.arkane-menu .button:hover .button-underline {
-    background-color: black !important;
-    width: 100%;
-}
-
-.arkane-menu .button.active .button-underline {
-    background-color: white;
-    width: 100%;
-}
-
-.arkane-menu:hover .button.active .button-underline {
-    background-color: black;
-}
-
-.arkane-menu:hover .button {
-    color: black;
-}
-
-.button-underline {
-    background-color: black;
-    width: 0px;
-    margin: auto;
-    height: 2px;
-    transition: width .25s ease-out;
-    background-color: black;
-}
-
-.button {
-    border-radius: 0;
-}
-
 .notification {
     border-radius: 0;
 }
 
 .death-gradient {
     background: linear-gradient(135deg, #4B304E 0%, #FF9C46 55%, #FEFFFB 100%);
+}
+
+/** Menu **/
+
+#burger {
+    color: var(--primary);
+    transition: background-color .5s, color .5s;
+    border-radius: 5px;
+    padding: 0px;
+    z-index: 6666;
+    padding: 10px;
+}
+
+#burger:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+#burger-checkbox:checked~#burger:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+#burger .material-symbols-outlined {
+    display: block;
+}
+
+
+
+#dcmenu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: -100vh;
+    background: #FF9C46;
+    background: linear-gradient(90deg, rgba(255, 156, 70, 1) 0%, rgba(245, 117, 112, 1) 100%);
+    z-index: 666;
+    transition: top .5s;
+}
+
+#dcmenu .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+
+#dcmenu a {
+    display: block;
+    border-radius: .375rem;
+    transition: color .25s, background-color .5s;
+}
+
+#dcmenu a:hover {
+    color: white;
+    background: #FF9C46;
+    background: linear-gradient(90deg, rgba(255, 156, 70, 1) 0%, rgba(245, 117, 112, 1) 100%);
+}
+
+#burger-checkbox:checked+#dcmenu {
+    top: 0px
+}
+
+#burger-checkbox:checked~#burger {
+    color: white;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.is-primary.is-outlined {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 10px !important;
 }
